@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../App.js';
 import ParticleModule from './ParticleModule.js';
 import Button from './Button.js';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 
 
@@ -24,7 +25,7 @@ class Hero extends Component {
 					<div className="hero-content">
 						<h1 className="hero-text">{heroText}</h1>
 						<h4 className="hero-subtext">{heroSubText}</h4>
-						<Button title={projectLink.title}/>
+						<button className="btn btn-primary">{projectLink.title}</button>
 		      </div>
 				</div>
 				<ParticleModule/>

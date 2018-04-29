@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../App.js';
+import ProjectsTemplate from './ProjectsTemplate.js';
 import projectOneImage from '../images/projectOneImage.png';
 import projectTwoImage from '../images/projectTwoImage.png';
 import projectThreeImage from '../images/projectThreeImage.png';
@@ -10,16 +11,20 @@ import projectFourImage from '../images/projectFourImage.png';
 
 const projectOne = {
 	name: 'Cady Studios',
-	date: 'Jan 2018',
+	date: 'January 2018',
 	type: 'UI/UX | Web Design',
 	imageUrl: '',
+	brief: '',
+	tech: '',
 };
 
 const projectTwo = {
 	name: 'Strategic Wealth Partners',
 	date: 'March 2018',
-	type: 'Landing Page Design',
+	type: 'Design',
 	imageUrl: '',
+	brief: '',
+	tech: '',
 };
 
 const projectThree = {
@@ -27,17 +32,19 @@ const projectThree = {
 	date: 'November 2017',
 	type: 'Landing Page Design',
 	imageUrl: '',
+	brief: '',
+	tech: '',
 };
 
 const projectFour = {
 	name: 'Stone Mountain Park',
-	date: 'October 2017',
+	date: 'September 2017',
 	type: 'UI/UX | App Design',
 	imageUrl: '',
+	brief: '',
+	tech: '',
 };
 
-
-const projectFive = "Project Five";
 
 
 //Project functional component
@@ -53,7 +60,7 @@ function Project(props){
 						/>
 					<figcaption>
 							<div className="projectInfoSmall">
-								<div className="projectType"><p>{props.type}</p></div>
+								<div className="projectType"><p>{props.date}</p></div>
 							</div>
 							<div className="projectTitle"><h2>{props.name}</h2></div>
 					</figcaption>
@@ -71,28 +78,28 @@ class ProjectsSection extends Component {
 					<div className="grid">
 						<Project 
 							name={projectOne.name}
-							type={projectOne.type}
+							date={projectOne.date}
 							imageUrl={projectOneImage}
 							 />
 					</div>
 					<div className="grid">
 						<Project 
 							name={projectTwo.name}
-							type={projectTwo.type}
+							date={projectTwo.date}
 							imageUrl={projectTwoImage}
 							 />
 					</div>
 					<div className="grid">
 						<Project 
 							name={projectThree.name}
-							type={projectThree.type}
+							date={projectThree.date}
 							imageUrl={projectThreeImage}
 							 />
 					</div>
 					<div className="grid">
 						<Project 
 							name={projectFour.name}
-							type={projectFour.type}
+							date={projectFour.date}
 							imageUrl={projectFourImage}
 							 />
 					</div>
