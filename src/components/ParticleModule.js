@@ -113,6 +113,7 @@ class ParticleModule extends Component {
             	}}
               style={{
                 width: '100%',
+                background: `#353838`,
               }}
             />
 					)

@@ -63,7 +63,6 @@ function Project(props){
 	);
 }
 
-
 class ProjectsSection extends Component {
 	render() {
 		return (

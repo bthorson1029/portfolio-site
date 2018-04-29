@@ -135,6 +135,18 @@ a:hover {
   cursor: pointer;
   color: #0ea5df; }
 
+.btn-hero {
+  left: -50%;
+  position: relative; }
+
+.logoMain {
+  width: 100%;
+  max-width: 180px; }
+  .logoMain .st0 {
+    fill: #353838; }
+  .logoMain .st1 {
+    fill: #DF405A; }
+
 .box-left .box-right {
   width: 80%;
   height: 300px;
@@ -143,15 +155,11 @@ a:hover {
 .navbar {
   width: 100vw;
   height: 70px;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 0;
   box-shadow: 0 -4px 40px rgba(0, 0, 0, 0.15);
   padding: 8px 16px 8px 16px;
   margin-bottom: 0; }
-
-.logoMain {
-  width: 100%;
-  max-width: 180px; }
 
 .menu-list {
   position: inherit;
@@ -166,41 +174,44 @@ a:hover {
   text-decoration: none; }
 
 .hero-container {
-  width: 100vw;
-  max-height: 800px;
-  min-height: 400px;
+  width: 100%;
   background-color: #353838;
   position: relative; }
 
+div > canvas {
+  max-height: 600px;
+  max-width: 100vw; }
+
 .hero-text {
-  font-size: 4rem;
-  color: #efefef;
-  text-align: center;
+  font-size: 3rem;
+  color: #ffffff;
   text-transform: uppercase;
   font-weight: 900;
-  letter-spacing: 3px; }
+  letter-spacing: 3px;
+  position: relative; }
+
+.hero-subtext {
+  color: #ffffff;
+  font-weight: 200;
+  font-family: "Proxima-Nova", sans-serif;
+  font-size: 1rem;
+  max-width: 670px;
+  line-height: 1.5rem;
+  letter-spacing: 1px; }
 
 .hero-content {
-  margin: 16rem 20rem 20rem 20rem;
-  width: 800px;
-  position: absolute; }
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding: 14rem 20rem 0 24rem; }
 
-.section-title {
-  width: auto;
-  margin: 0 auto;
-  text-align: center; }
-
-.section-title-small {
-  font-family: "Proxima-Nova", sans-serif;
-  color: #0ea5df;
-  font-weight: 500;
-  font-size: 2rem; }
-
-.section-subtitle {
-  font-family: "Proxima-Nova", sans-serif;
-  color: #353838;
-  font-weight: 900;
-  font-size: 5rem; }
+.logoHero {
+  max-width: 400px;
+  position: relative; }
+  .logoHero .st0 {
+    fill: #ffffff; }
+  .logoHero .st1 {
+    fill: #DF405A; }
 
 .projectImage {
   overflow: hidden;
