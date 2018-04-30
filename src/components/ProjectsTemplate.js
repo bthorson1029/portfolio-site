@@ -12,7 +12,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 function ProjectsTemplate(props) {
 	return(
 			<div>
-				<div className="projectHero" style="background:{props.imageUrl}">
+				<div className="projectHero">
 					<div className="projectHeading">
 						<h1>{props.name}</h1>
 						<div className="projectInfoLeft">

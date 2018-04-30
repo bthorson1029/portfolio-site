@@ -9,45 +9,45 @@ import projectFourImage from '../images/projectFourImage.png';
 
 // Projects
 
-const projectOne = {
-	name: 'Cady Studios',
-	date: 'January 2018',
-	type: 'UI/UX | Web Design',
-	imageUrl: '',
-	brief: '',
-	tech: '',
-};
-
-const projectTwo = {
-	name: 'Strategic Wealth Partners',
-	date: 'March 2018',
-	type: 'Design',
-	imageUrl: '',
-	brief: '',
-	tech: '',
-};
-
-const projectThree = {
-	name: 'Carzilla',
-	date: 'November 2017',
-	type: 'Landing Page Design',
-	imageUrl: '',
-	brief: '',
-	tech: '',
-};
-
-const projectFour = {
-	name: 'Stone Mountain Park',
-	date: 'September 2017',
-	type: 'UI/UX | App Design',
-	imageUrl: '',
-	brief: '',
-	tech: '',
-};
 
 
+const data = [
+			{
+		'name': 'Cady Studios',
+		'date': 'January 2018',
+		'type': 'UI/UX | Web Design',
+		'imageUrl': require('../images/projectOneImage.png'),
+		'brief': '',
+		'tech': '',
+	},
+		{
+		'name': 'Strategic Wealth Partners',
+		'date': 'March 2018',
+		'type': 'Design',
+		'imageUrl': require('../images/projectTwoImage.png'),
+		'brief': '',
+		'tech': '',
+	},
+	{
+		'name': 'Carzilla',
+		'date': 'November 2017',
+		'type': 'Landing Page Design',
+		'imageUrl': require('../images/projectThreeImage.png'),
+		'brief': '',
+		'tech': '',
+	},
+	{
+		'name': 'Stone Mountain Park',
+		'date': 'September 2017',
+		'type': 'UI/UX | App Design',
+		'imageUrl': require('../images/projectFourImage.png'),
+		'brief': '',
+		'tech': '',
+	}	
+];
 
-//Project functional component
+
+
 
 function Project(props){
 	return (
@@ -71,41 +71,43 @@ function Project(props){
 }
 
 class ProjectsSection extends Component {
+	constructor(props) {
+		super(props)
+
+		this.state = {
+			works: []
+		}
+	}
+
+	componentWillMount() {
+		this.loadWork()
+	}
+
+	loadWork() {
+		const works = []
+		data.map(item => works.push(item))
+		this.setState({ works })
+		setTimeout(() => {
+			console.log(this.state)
+		}, 2000)
+	}
+
 	render() {
+		const projects = this.state.works.map((project, index) => <div className="grid"><Project 
+				name={project.name}
+				date={project.date}
+				type={project.type}
+				imageUrl={project.imageUrl}
+				brief={project.brief}
+				tech={project.tech}
+			/></div>)
+
 		return (
 			<div className="container-fluid">
 				<div className="project-section">
-					<div className="grid">
-						<Project 
-							name={projectOne.name}
-							date={projectOne.date}
-							imageUrl={projectOneImage}
-							 />
+						{ projects }
 					</div>
-					<div className="grid">
-						<Project 
-							name={projectTwo.name}
-							date={projectTwo.date}
-							imageUrl={projectTwoImage}
-							 />
-					</div>
-					<div className="grid">
-						<Project 
-							name={projectThree.name}
-							date={projectThree.date}
-							imageUrl={projectThreeImage}
-							 />
-					</div>
-					<div className="grid">
-						<Project 
-							name={projectFour.name}
-							date={projectFour.date}
-							imageUrl={projectFourImage}
-							 />
-					</div>
-
 				</div>
-			</div>
 		)
 	}
 }
