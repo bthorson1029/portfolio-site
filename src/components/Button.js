@@ -4,14 +4,14 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 function Button( props ) {
       return(
-          <div>
-						<button className = "btn btn-primary" title= {props.title}>
-              <Link to="./images/logo.svg">{props.title}</Link>
+        <div>
+        	<a href={props.pathname}>
+						<button className = "btn btn-primary" title={props.title}>
+            	{props.title}
 	          </button>
-					</div>	
-          )
-  }
-
-
+          </a>
+				</div>	
+        )
+		  }
 
 export default Button;

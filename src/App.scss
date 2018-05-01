@@ -5,7 +5,7 @@ $main_color: #0ea5df;
 $pure_white: #ffffff;
 $snow-white: #efefef;
 $carbon: #353838;
-$Typeface: 'Proxima-Nova', sans-serif;
+$Typeface: 'Montserrat', sans-serif;
 
 
 body {
@@ -99,6 +99,12 @@ div > canvas {
   padding: 14rem 20rem 0 24rem;
 }
 
+.heroButton {
+  margin-top: 1rem;
+  background-color: #dd425c !important;
+  border-color: #dd425c !important;
+}
+
 .logoHero {
   max-width: 400px;
   position: relative;
@@ -132,11 +138,21 @@ div > canvas {
 }
 
 .projectTitle {
+  letter-spacing: 2px;
 }
 
 .project-section {
   width: 100%;
   height: 420px;
   margin-top: 1rem;
+}
+
+.project-section > h2 {
+  
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-top: 4rem;
+  margin-bottom: 4.5rem;
+  color: $carbon;
 }
 

@@ -9,7 +9,7 @@ class ParticleModule extends Component {
               params={{
             		particles: {
 								    number: {
-								      value: 60,
+								      value: 90,
 								      density: {
 								        enable: true,
 								        value_area: 1000
@@ -74,8 +74,8 @@ class ParticleModule extends Component {
 								    detect_on: "canvas",
 								    events: {
 								      onhover: {
-								        enable: false,
-								        mode: "repulse"
+								        enable: true,
+								        mode: "bubble"
 								      },
 								      onclick: {
 								        enable: true,
@@ -91,14 +91,14 @@ class ParticleModule extends Component {
 								        }
 								      },
 								      bubble: {
-								        distance: 400,
-								        size: 40,
+								        distance: 300,
+								        size: 5,
 								        duration: 2,
 								        opacity: 8,
 								        speed: 3
 								      },
 								      repulse: {
-								        distance: 200,
+								        distance: 100,
 								        duration: 0.4
 								      },
 								      push: {
