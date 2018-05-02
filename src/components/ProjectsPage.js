@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import '../App.js';
-import Button from './Button.js';
+import Projects from './Projects.js';
+import ProjectsSection from './ProjectsSection.js';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import {data} from './ProjectsSection.js';
 
 class ProjectsPage extends Component {
 	render() {
 		return(
 			<div>
 				<div className="container">
-					<Header />
-					<ProjectsTemplate />
+					<Projects	data={data} key={data.id} />
 				</div>
 			</div>
 		);

@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 import Header from './components/Header.js';
 import Hero from './components/Hero.js';
 import ProjectsSection from './components/ProjectsSection.js';
+import ProjectsPage from './components/ProjectsPage.js';
 
 
 class App extends Component {
@@ -11,9 +12,12 @@ class App extends Component {
     return (
       <Router>
 	      <div className="App">
-	        <Header />
-	        <Hero />
-	        <ProjectsSection />
+	        <Route path="/" component={Header} />
+	        <Route exact path="/" component={Hero} />
+	        <Switch>
+	        	<Route exact path="/" component={ProjectsSection} />
+	        	<Route path="/Projects/:projectId" component={ProjectsPage} />
+	        </Switch>
 	      </div>
       </Router>
     );

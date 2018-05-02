@@ -13,8 +13,8 @@ const heroSubText = `Hi, my name is Bryce Thorson, and I'm a digital designer & 
 
 
 const projectLink = {
-	title: 'Extra Long Cheese Coney',
-	pathname: '',
+	title: 'View Work',
+	pathname: '/Projects/',
 }
 
 class Hero extends Component {
@@ -25,7 +25,9 @@ class Hero extends Component {
 					<div className="hero-content">
 						<h1 className="hero-text">{heroText}</h1>
 						<h4 className="hero-subtext">{heroSubText}</h4>
-						<button className="btn btn-primary heroButton">{projectLink.title}</button>
+						<Link to={projectLink.pathname}>
+							<button className="btn btn-primary heroButton">{projectLink.title}</button>
+						</Link>
 		      </div>
 				</div>
 				<ParticleModule/>
