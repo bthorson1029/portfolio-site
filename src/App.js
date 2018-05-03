@@ -5,7 +5,7 @@ import Header from './components/Header.js';
 import Hero from './components/Hero.js';
 import ProjectsSection from './components/ProjectsSection.js';
 import ProjectsPage from './components/ProjectsPage.js';
-
+import Projects from './components/Projects.js';
 
 class App extends Component {
   render() {
@@ -15,8 +15,8 @@ class App extends Component {
 	        <Route path="/" component={Header} />
 	        <Route exact path="/" component={Hero} />
 	        <Switch>
-	        	<Route exact path="/" component={ProjectsSection} />
-	        	<Route path="/Projects/:projectId" component={ProjectsPage} />
+	        	<Route exact path="/Projects" component={ProjectsSection} />
+	        	<Route path="/Projects/:projectId" component={Projects} />
 	        </Switch>
 	      </div>
       </Router>

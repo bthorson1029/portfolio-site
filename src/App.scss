@@ -13,6 +13,11 @@ body {
   margin: 0;
 }
 
+h5 {
+  font-size: 0.8rem !important;
+  text-transform: uppercase;
+}
+
 a:hover {
   text-decoration: none;
   cursor: pointer;
@@ -156,3 +161,45 @@ div > canvas {
   color: $carbon;
 }
 
+
+// Individual Project Page 
+
+.projectHero {
+  width: 100%;
+  height: 600px;
+  color: $snow-white;
+  position: absolute;
+}
+
+.projectMain {
+  padding-top: 12rem;
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.projectHeading > h1 {
+  font-size: 5rem;
+}
+
+.projectInfoBox {
+  width: 100%;
+  display: flex;
+  margin-top: 2rem;
+}
+
+.projectInfoLeft {
+  width: 50%
+}
+
+
+.projectInfoRight {
+  width: 50%;
+}
+
+.projectContentArea {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
