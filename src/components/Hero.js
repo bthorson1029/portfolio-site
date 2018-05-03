@@ -14,14 +14,14 @@ const heroSubText = `Hi, my name is Bryce Thorson, and I'm a digital designer & 
 
 const projectLink = {
 	title: 'View Work',
-	pathname: '/Projects/',
+	pathname: '/Projects', 
 }
 
 class Hero extends Component {
 	render() {
 		return (
-			<div>
-				<div className="hero-container">
+			<div className="heroCanvas">
+				<div className="container hero-container">
 					<div className="hero-content">
 						<h1 className="hero-text">{heroText}</h1>
 						<h4 className="hero-subtext">{heroSubText}</h4>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../App.js';
 import Projects from './Projects.js';
 import Project from './Project.js';
+import ParticleModule from './ParticleModule.js';
 
 
 
@@ -114,11 +115,16 @@ class ProjectsSection extends Component {
 			/></div>)
 
 		return (
-			<div className="container">
-				<div className="project-section">
-					<h2>Recent Projects</h2>
-						{ projects }
+			<div className="projectsCanvas">
+				<div className="container project-section">
+					<div className="projects-title">
+						<h1>Work</h1>
 					</div>
+						<div className="projectsArea">
+							{ projects }
+						</div>
+					</div>
+					<ParticleModule />
 				</div>
 		)
 	}

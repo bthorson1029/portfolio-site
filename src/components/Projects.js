@@ -20,7 +20,7 @@ function Projects(props) {
   }
 
 	return(
-		<div>
+		<div className="projectCanvas">
 			<div className="projectHero" key={project.id}>
 				<div className="container">
 					<div className="projectMain">
@@ -52,7 +52,7 @@ function Projects(props) {
 					</div>
 				</div>
 			</div>
-			<ParticleModule/>
+			<ParticleModule />
 			<div className="projectContentArea">
 				<p>{project.content}</p>
 			</div>
