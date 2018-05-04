@@ -14,7 +14,7 @@
   margin-right: 0.5rem;
   margin-left: 0.5rem;
   min-width: 320px;
-  max-width: 30%;
+  max-width: 360px;
   width: 100%;
   background: #353838;
   text-align: center;
@@ -148,6 +148,10 @@ a:hover {
   cursor: pointer;
   color: #dd425c; }
 
+.row {
+  margin: 0 !important;
+  margin-bottom: 2rem; }
+
 .container {
   padding: 0 !important; }
 
@@ -192,15 +196,17 @@ a:hover {
 .hero-container {
   width: 100%;
   position: absolute;
-  left: 23%; }
+  left: 22%; }
 
 .projectCanvas canvas {
   max-height: 600px;
+  min-height: 600px;
   max-width: 100vw;
   width: 100%; }
 
 .projectsCanvas canvas {
   max-height: 300px;
+  min-height: 300px;
   max-width: 100vw;
   width: 100%; }
 
@@ -208,7 +214,7 @@ a:hover {
   font-size: 5rem;
   color: #ffffff;
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 800;
   letter-spacing: 3px;
   position: relative; }
 
@@ -277,7 +283,7 @@ a:hover {
 
 .projects-title h1 {
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 800;
   font-size: 5rem;
   margin-top: 7.5rem;
   color: #ffffff;
@@ -295,20 +301,21 @@ a:hover {
 .projectHero {
   width: 100%;
   height: 600px;
-  color: #ffffff;
+  color: #353838;
   position: absolute; }
 
 .projectMain {
-  padding-top: 12rem;
-  max-width: 1024px;
   width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-top: 8rem;
+  margin-bottom: 4rem; }
 
 .projectHeading > h1 {
   font-size: 5rem;
   text-transform: uppercase;
   font-weight: 800;
-  letter-spacing: 0.4rem; }
+  margin-top: 8.5rem;
+  color: #ffffff; }
 
 .projectInfoBox {
   width: 100%;
@@ -325,4 +332,9 @@ a:hover {
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
-  padding-top: 2rem; }
+  color: #353838; }
+
+.projectContentArea > h2 {
+  text-transform: uppercase;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 800; }

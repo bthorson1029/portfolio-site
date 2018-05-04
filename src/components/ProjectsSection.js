@@ -14,6 +14,7 @@ const data = {
 					'date': 'January 2018',
 					'type': 'UI/UX | Front End Development',
 					'imageUrl': require('../assets/images/projectOneImage.png'),
+					'projectImage': require('../assets/images/StoneMountain-iPhone.png'),
 					'brief': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni molestiae pariatur accusamus, dolores itaque corrupti, beatae doloremque vero fugiat quos odio, iusto debitis cum aut harum ipsam, quam reprehenderit. Expedita!',
 					'tech': 'HTML, CSS, JS, Bootstrap, SketchApp, InVision, Adobe Illustrator',
 					'content': `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
@@ -30,6 +31,7 @@ const data = {
 					'date': 'March 2018',
 					'type': 'UI/UX',
 					'imageUrl': require('../assets/images/projectTwoImage.png'),
+					'projectImage': require('../assets/images/StoneMountain-iPhone.png'),
 					'brief': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab tenetur quo, harum temporibus veritatis sapiente aliquam. Perferendis reprehenderit dolorum eius, harum necessitatibus. Placeat voluptatum soluta, veniam impedit ullam temporibus. Laboriosam.',
 					'tech': 'SketchApp, InVision, Adobe Photoshop',
 					'content': `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
@@ -46,6 +48,7 @@ const data = {
 					'date': 'November 2017',
 					'type': 'UI/UX',
 					'imageUrl': require('../assets/images/projectThreeImage.png'),
+					'projectImage': require('../assets/images/StoneMountain-iPhone.png'),
 					'brief': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi sit saepe, ducimus velit officia rem similique aliquid, quisquam magnam ea id fuga est facere dicta iste consequuntur minus adipisci maiores?',
 					'tech': 'SketchApp, InVision, Adobe Photoshop, Adobe Illustrator',
 					'content': `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
@@ -61,6 +64,7 @@ const data = {
 					'date': 'September 2017',
 					'type': 'UI/UX',
 					'imageUrl': require('../assets/images/projectFourImage.png'),
+					'projectImage': require('../assets/images/StoneMountain-iPhone.png'),
 					'brief': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ducimus mollitia, impedit voluptatibus minima rerum, cumque, maxime repudiandae et voluptas iure dolorem asperiores, illum voluptate? Repudiandae quis magnam enim, quidem.',
 					'tech': 'SketchApp, InVision, Adobe Illustrator',
 					'content': `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 

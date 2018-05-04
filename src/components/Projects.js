@@ -20,14 +20,16 @@ function Projects(props) {
   }
 
 	return(
-		<div className="projectCanvas">
+		<div className="projectsCanvas">
 			<div className="projectHero" key={project.id}>
 				<div className="container">
-					<div className="projectMain">
+					
 						<div className="projectHeading">
 							<h1>{project.name}</h1>
-							<div className="projectInfoBox">
-								<div className="projectInfoLeft">
+						</div>
+						<div className="projectMain">
+							<div className="projectInfoBox row">
+								<div className="projectInfoLeft col-md-6">
 									<div className="projectRole">
 										<h5>Role</h5>
 										<p>{project.type}</p>
@@ -41,21 +43,29 @@ function Projects(props) {
 										<p>{project.date}</p>
 									</div>
 								</div>
-								<div className="projectInfoRight">
+								<div className="projectInfoRight col-md-6">
 									<div className="projectBrief">
 										<h5>Brief</h5>
 										<p>{project.brief}</p>
 									</div>
 								</div>
 							</div>
+						<hr />
+						<div className="row">
+							<div className="col-lg-6">
+								<div className="projectContentArea">
+										<h2>Project Summary</h2>
+										<p>{project.content}</p>
+								</div>
+							</div>
+							<div className="col-lg-6">
+								<img className="img-fluid" src={project.projectImage} alt={project.name} />
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<ParticleModule />
-			<div className="projectContentArea">
-				<p>{project.content}</p>
-			</div>
 		</div>
 	);
 }
