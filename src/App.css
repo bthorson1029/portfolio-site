@@ -112,7 +112,7 @@ figure.effect-sadie p {
   -webkit-transform: translate3d(0, 10px, 0);
   transform: translate3d(0, 10px, 0);
   font-family: "Proxima-Nova", sans-serif;
-  font-weight: 100; }
+  font-weight: 400; }
 
 figure.effect-sadie:hover h2 {
   color: #fff;
@@ -128,13 +128,15 @@ figure.effect-sadie:hover p {
 
 body {
   font-family: "Proxima Nova", sans-serif !important;
-  margin: 0; }
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 h5 {
   font-size: 0.8rem !important;
   text-transform: uppercase;
-  font-weight: 100;
-  font-family: 'Gotham Black' !important;
+  font-weight: 800 !important;
+  font-family: "Proxima Nova", sans-serif !important;
   letter-spacing: 2px;
   color: #dd425c !important; }
 
@@ -142,6 +144,10 @@ p {
   font-size: 1rem !important;
   line-height: 1.5rem !important;
   font-family: 'Lato' !important; }
+
+button {
+  font-family: "Proxima Nova", sans-serif !important;
+  font-weight: 600 !important; }
 
 a:hover {
   text-decoration: none;
@@ -220,7 +226,7 @@ a:hover {
 
 .hero-subtext {
   color: #ffffff;
-  font-weight: 200;
+  font-weight: 400;
   font-family: 'Lato';
   font-size: 1rem;
   max-width: 670px;
@@ -340,13 +346,13 @@ a:hover {
   width: 50%; }
 
 .contentZone {
-  margin-top: 4rem;
+  margin-top: 2rem;
   margin-bottom: 4.5rem; }
 
 .projectContentArea {
-  max-width: 1024px;
   width: 100%;
-  color: #353838; }
+  color: #353838;
+  margin-bottom: 2rem; }
 
 .projectContentArea > h2 {
   text-transform: uppercase;
@@ -362,4 +368,7 @@ a:hover {
   text-transform: uppercase;
   font-family: "Proxima Nova", sans-serif;
   font-weight: 800;
+  margin-top: 2rem; }
+
+.projectImageLarge {
   margin-top: 2rem; }

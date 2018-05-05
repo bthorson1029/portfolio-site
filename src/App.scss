@@ -11,13 +11,15 @@ $Typeface: 'Proxima Nova', sans-serif;
 body {
   font-family: $Typeface !important;
   margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h5 {
   font-size: 0.8rem !important;
   text-transform: uppercase;
-  font-weight: 100;
-  font-family: 'Gotham Black' !important;
+  font-weight: 800 !important;
+  font-family: $Typeface !important;
   letter-spacing: 2px;
   color: $main_color !important;
 }
@@ -27,6 +29,11 @@ p {
   line-height: 1.5rem !important;
   font-family: 'Lato' !important;
 
+}
+
+button {
+  font-family: $Typeface !important;
+  font-weight: 600 !important;
 }
 
 a:hover {
@@ -118,7 +125,7 @@ a:hover {
 
 .hero-subtext {
   color: $pure-white;
-  font-weight: 200;
+  font-weight: 400;
   font-family: 'Lato';
   font-size: 1rem;
   max-width: 670px;
@@ -225,6 +232,7 @@ a:hover {
 }
 
 
+
 // Individual Project Page 
 
 .projectHero {
@@ -265,14 +273,14 @@ a:hover {
 }
 
 .contentZone {
-  margin-top: 4rem;
+  margin-top: 2rem;
   margin-bottom: 4.5rem;
 }
 
 .projectContentArea {
-  max-width: 1024px;
   width: 100%;
   color: $carbon;
+  margin-bottom: 2rem;
 }
 
 
@@ -292,5 +300,9 @@ a:hover {
   text-transform: uppercase;
   font-family: $Typeface;
   font-weight: 800;
+  margin-top: 2rem;
+}
+
+.projectImageLarge {
   margin-top: 2rem;
 }

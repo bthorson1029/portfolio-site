@@ -51,7 +51,7 @@ const data = {
 					'type': 'UI/UX',
 					'projectUrl': '',
 					'imageUrl': require('../assets/images/projectThreeImage.png'),
-					'projectImage': require('../assets/images/StoneMountain-iPhone.png'),
+					'projectImage': require('../assets/images/CZ-Project-1.png'),
 					'brief': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi sit saepe, ducimus velit officia rem similique aliquid, quisquam magnam ea id fuga est facere dicta iste consequuntur minus adipisci maiores?',
 					'tech': 'SketchApp, InVision, Adobe Photoshop, Adobe Illustrator',
 					'content': `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 

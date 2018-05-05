@@ -56,14 +56,11 @@ function Projects(props) {
 						<hr />
 						<div className="contentZone">
 							<div className="row">
-								<div className="col-lg-6">
+								<div className="col-lg-12">
 									<div className="projectContentArea">
 											<h2>Project Summary</h2>
-											<p>{project.content}</p>
+											<p>{project.brief}</p>
 									</div>
-								</div>
-								<div className="col-lg-6">
-									<img className="img-fluid projectImageSmall" src={project.imageUrl} alt={project.name} />
 								</div>
 							</div>
 							<hr />
@@ -90,7 +87,7 @@ function Projects(props) {
 							</div>
 							<div className="row">
 								<div className="col-lg-12 projectContentArea_B">
-									<h2>Initial Challenge</h2>
+									<h2>Wireframes</h2>
 								</div>
 								<div className="col-lg-6 projectContentArea_B">
 									<p>{project.content}</p>
