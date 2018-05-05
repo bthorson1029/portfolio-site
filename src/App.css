@@ -244,6 +244,17 @@ a:hover {
   border-color: #dd425c;
   border-width: 2px !important; }
 
+.projectButton {
+  background-color: #dd425c !important;
+  border-color: #dd425c !important;
+  border-width: 2px !important; }
+
+.projectButton:hover {
+  background-color: transparent !important;
+  border-color: #dd425c;
+  color: #dd425c !important;
+  border-width: 2px !important; }
+
 .logoHero {
   max-width: 400px;
   position: relative; }
@@ -328,13 +339,27 @@ a:hover {
 .projectInfoRight {
   width: 50%; }
 
+.contentZone {
+  margin-top: 4rem;
+  margin-bottom: 4.5rem; }
+
 .projectContentArea {
   max-width: 1024px;
   width: 100%;
-  margin: 0 auto;
   color: #353838; }
 
 .projectContentArea > h2 {
   text-transform: uppercase;
   font-family: "Proxima Nova", sans-serif;
   font-weight: 800; }
+
+.projectContentArea_B {
+  width: 100%;
+  color: #353838;
+  margin-top: 1rem; }
+
+.projectContentArea_B > h2 {
+  text-transform: uppercase;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 800;
+  margin-top: 2rem; }

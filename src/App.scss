@@ -146,6 +146,18 @@ a:hover {
   border-width: 2px !important;
 }
 
+.projectButton {
+  background-color: #dd425c !important;
+  border-color: #dd425c !important;
+  border-width: 2px !important;
+}
+
+.projectButton:hover {
+  background-color: rgba(0,0,0,0) !important;
+  border-color: $main_color;
+  color: $main_color !important;
+  border-width: 2px !important;
+}
 
 .logoHero {
   max-width: 400px;
@@ -252,15 +264,33 @@ a:hover {
   width: 50%;
 }
 
+.contentZone {
+  margin-top: 4rem;
+  margin-bottom: 4.5rem;
+}
+
 .projectContentArea {
   max-width: 1024px;
   width: 100%;
-  margin: 0 auto;
   color: $carbon;
 }
+
 
 .projectContentArea > h2 {
   text-transform: uppercase;
   font-family: $Typeface;
   font-weight: 800;
+}
+
+.projectContentArea_B {
+  width: 100%;
+  color: $carbon;
+  margin-top: 1rem;
+}
+
+.projectContentArea_B > h2 {
+  text-transform: uppercase;
+  font-family: $Typeface;
+  font-weight: 800;
+  margin-top: 2rem;
 }

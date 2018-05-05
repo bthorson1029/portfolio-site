@@ -47,19 +47,57 @@ function Projects(props) {
 									<div className="projectBrief">
 										<h5>Brief</h5>
 										<p>{project.brief}</p>
+										<Link to={project.projectUrl}>
+												<button className="btn btn-primary projectButton">Visit Website</button>
+										</Link>
 									</div>
 								</div>
 							</div>
 						<hr />
-						<div className="row">
-							<div className="col-lg-6">
-								<div className="projectContentArea">
-										<h2>Project Summary</h2>
-										<p>{project.content}</p>
+						<div className="contentZone">
+							<div className="row">
+								<div className="col-lg-6">
+									<div className="projectContentArea">
+											<h2>Project Summary</h2>
+											<p>{project.content}</p>
+									</div>
+								</div>
+								<div className="col-lg-6">
+									<img className="img-fluid projectImageSmall" src={project.imageUrl} alt={project.name} />
 								</div>
 							</div>
-							<div className="col-lg-6">
-								<img className="img-fluid" src={project.projectImage} alt={project.name} />
+							<hr />
+							<div className="row">								
+								<div className="col-lg-12">
+									<img className="img-fluid projectImageLarge" src={project.projectImage} alt={project.name} />
+								</div>
+							</div>
+							<div className="row">
+								<div className="col-lg-12 projectContentArea_B">
+									<h2>Initial Challenge</h2>
+								</div>
+								<div className="col-lg-6 projectContentArea_B">
+									<p>{project.content}</p>
+								</div>
+								<div className="col-lg-6 projectContentArea_B">
+									<p>{project.content}</p>
+								</div>
+							</div>
+							<div className="row">								
+								<div className="col-lg-12">
+									<img className="img-fluid projectImageLarge" src={project.projectImage} alt={project.name} />
+								</div>
+							</div>
+							<div className="row">
+								<div className="col-lg-12 projectContentArea_B">
+									<h2>Initial Challenge</h2>
+								</div>
+								<div className="col-lg-6 projectContentArea_B">
+									<p>{project.content}</p>
+								</div>
+								<div className="col-lg-6 projectContentArea_B">
+									<p>{project.content}</p>
+								</div>
 							</div>
 						</div>
 					</div>
