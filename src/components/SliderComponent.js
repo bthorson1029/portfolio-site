@@ -10,14 +10,17 @@ export default class SimpleSlider extends Component {
       dots: true,
       arrows: true,
       infinite: true,
-      speed: 500,
+      speed: 700,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      draggable: true,
+      
+      lazyLoad: true
     };
     return (
       <Slider {...settings}>
         {this.props.slides.map(slide => {
-        		return <div><img className="img-fluid" src={slide} key={slide.id} /></div>
+        		return <div><img className="img-fluid" src={slide} key={slide.id} alt={this.props.name + ' Project Images'}/></div>
         	})}
       </Slider>
     );

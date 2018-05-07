@@ -48,14 +48,17 @@ function Projects(props) {
 									<div className="projectBrief">
 										<h5>Brief</h5>
 										<p>{project.brief}</p>
-										<Link to={project.projectUrl}>
-												<button className="btn btn-primary projectButton">Visit Website</button>
-										</Link>
+										<a href={project.projectUrl} target="_blank"><button className="btn btn-primary projectButton">Visit Website</button></a>
 									</div>
 								</div>
 							</div>
 						<hr />
 						<div className="contentZone">
+							<div className="row">								
+								<div className="col-lg-8 offset-lg-2">
+									<SliderComponent {...project}/>
+								</div>
+							</div>
 							<div className="row">
 								<div className="col-lg-12">
 									<div className="projectContentArea">
@@ -65,11 +68,6 @@ function Projects(props) {
 								</div>
 							</div>
 							<hr />
-							<div className="row">								
-								<div className="col-lg-12">
-									<SliderComponent {...project}/>
-								</div>
-							</div>
 						</div>
 					</div>
 				</div>

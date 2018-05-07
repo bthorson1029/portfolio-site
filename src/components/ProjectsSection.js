@@ -13,14 +13,19 @@ const data = {
 					'name': 'Cady Studios',
 					'date': 'January 2018',
 					'type': 'UI/UX | Front End Development',
-					'projectUrl': '',
+					'projectUrl': 'http://store.cadystudios.com',
 					'imageUrl': require('../assets/images/projectOneImage.png'),
 					'projectImage': require('../assets/images/CS-Project-4.png'),
 					'brief': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni molestiae pariatur accusamus, dolores itaque corrupti, beatae doloremque vero fugiat quos odio, iusto debitis cum aut harum ipsam, quam reprehenderit. Expedita!',
 					'tech': 'HTML, CSS, JS, Bootstrap, Kentico, Sketch, InVision, Adobe Illustrator',
 					'slides': [
-							require('../assets/images/CS-Project-4.png'),
-							require('../assets/images/projectOneImage.png')
+							require('../assets/images/CS-Project-Homepage.png'),
+							require('../assets/images/CS-Project-Homepage-Mobile.png'),
+							require('../assets/images/CS-Project-Scenes.png'),
+							require('../assets/images/CS-Project-Scenes-Mobile.png'),
+							require('../assets/images/CS-Project-Sessions.png'),
+							require('../assets/images/CS-Project-Sessions-Mobile.png')
+						
 					],
 					'content': `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
 											Quasi molestiae, voluptate magnam! Eius eaque, explicabo autem possimus repellendus sit, cum. 
