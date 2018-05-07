@@ -8,6 +8,7 @@ export default class SimpleSlider extends Component {
   render() {
     const settings = {
       dots: true,
+      arrows: true,
       infinite: true,
       speed: 500,
       slidesToShow: 1,
@@ -15,24 +16,9 @@ export default class SimpleSlider extends Component {
     };
     return (
       <Slider {...settings}>
-        <div>
-          <img className="img-fluid projectImageLarge" src={this.props.projectImage} alt={this.props.name} />
-        </div>
-        <div>
-          <img className="img-fluid projectImageLarge" src={this.props.imageUrl} alt={this.props.name} />
-        </div>
-        <div>
-          <h3>3</h3>
-        </div>
-        <div>
-          <h3>4</h3>
-        </div>
-        <div>
-          <h3>5</h3>
-        </div>
-        <div>
-          <h3>6</h3>
-        </div>
+        {this.props.slides.map(slide => {
+        		return <div><img className="img-fluid" src={slide} key={slide.id} /></div>
+        	})}
       </Slider>
     );
   }
