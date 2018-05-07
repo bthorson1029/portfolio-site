@@ -1,5 +1,7 @@
 @import '_custom.scss';
 @import url("https://use.typekit.net/mbq5gkf.css");
+@import "../node_modules/slick-carousel/slick/slick.css"; 
+@import "../node_modules/slick-carousel/slick/slick-theme.css";
 
 $main_color: #dd425c;
 $pure_white: #ffffff;
@@ -222,7 +224,7 @@ a:hover {
 }
 
 .projectsArea {
-  margin-top: 10rem;
+  margin-top: 5.25rem;
 }
 
 .mainSection {
@@ -264,7 +266,7 @@ a:hover {
 }
 
 .projectInfoLeft {
-  width: 50%
+  width: 50%;
 }
 
 

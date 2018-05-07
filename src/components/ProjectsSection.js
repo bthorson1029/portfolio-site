@@ -17,7 +17,10 @@ const data = {
 					'imageUrl': require('../assets/images/projectOneImage.png'),
 					'projectImage': require('../assets/images/CS-Project-4.png'),
 					'brief': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni molestiae pariatur accusamus, dolores itaque corrupti, beatae doloremque vero fugiat quos odio, iusto debitis cum aut harum ipsam, quam reprehenderit. Expedita!',
-					'tech': 'HTML, CSS, JS, Bootstrap, SketchApp, InVision, Adobe Illustrator',
+					'tech': 'HTML, CSS, JS, Bootstrap, Kentico, Sketch, InVision, Adobe Illustrator',
+					'summary': '',
+					'challenge': '',
+
 					'content': `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
 											Quasi molestiae, voluptate magnam! Eius eaque, explicabo autem possimus repellendus sit, cum. 
 											Ipsum, aliquid. Exercitationem earum ipsa sed odio repellendus fugiat, adipisci nihil! 
@@ -35,7 +38,8 @@ const data = {
 					'imageUrl': require('../assets/images/projectTwoImage.png'),
 					'projectImage': require('../assets/images/StoneMountain-iPhone.png'),
 					'brief': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab tenetur quo, harum temporibus veritatis sapiente aliquam. Perferendis reprehenderit dolorum eius, harum necessitatibus. Placeat voluptatum soluta, veniam impedit ullam temporibus. Laboriosam.',
-					'tech': 'SketchApp, InVision, Adobe Photoshop',
+					'tech': 'Sketch, InVision, Adobe Photoshop',
+					'summary': '',				
 					'content': `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
 											Incidunt recusandae, deleniti corporis sunt odit molestiae nobis nesciunt. 
 											Porro corporis velit, fugit totam culpa nesciunt sed cupiditate tempora officiis impedit enim quia rerum ipsum excepturi perspiciatis eos? 
@@ -53,7 +57,10 @@ const data = {
 					'imageUrl': require('../assets/images/projectThreeImage.png'),
 					'projectImage': require('../assets/images/CZ-Project-1.png'),
 					'brief': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi sit saepe, ducimus velit officia rem similique aliquid, quisquam magnam ea id fuga est facere dicta iste consequuntur minus adipisci maiores?',
-					'tech': 'SketchApp, InVision, Adobe Photoshop, Adobe Illustrator',
+					'tech': 'Sketch, InVision, Adobe Photoshop, Adobe Illustrator',
+					'summary': '',
+					'challenge': '',
+
 					'content': `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
 											Enim nisi, fuga, illo cum dolore ratione nesciunt culpa, nemo rem sequi voluptate obcaecati! 
 											Quisquam dolorum rem aliquam illum repudiandae, quia libero neque, cumque tempora esse excepturi incidunt id assumenda laudantium ea fuga ex eius adipisci labore asperiores molestiae vel. 
@@ -70,7 +77,10 @@ const data = {
 					'imageUrl': require('../assets/images/projectFourImage.png'),
 					'projectImage': require('../assets/images/StoneMountain-iPhone.png'),
 					'brief': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ducimus mollitia, impedit voluptatibus minima rerum, cumque, maxime repudiandae et voluptas iure dolorem asperiores, illum voluptate? Repudiandae quis magnam enim, quidem.',
-					'tech': 'SketchApp, InVision, Adobe Illustrator',
+					'tech': 'Sketch, InVision, Adobe Illustrator',
+					'summary': '',
+					'challenge': '',
+
 					'content': `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
 											Deserunt minima quod nesciunt beatae nemo, cupiditate. 
 											Obcaecati magnam possimus natus iste in autem itaque! 

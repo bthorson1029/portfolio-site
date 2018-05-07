@@ -1,5 +1,7 @@
 /* Grid Styles */
 @import url("https://use.typekit.net/mbq5gkf.css");
+@import url(../node_modules/slick-carousel/slick/slick.css);
+@import url(../node_modules/slick-carousel/slick/slick-theme.css);
 .grid {
   position: relative;
   margin: 0 auto;
@@ -308,7 +310,7 @@ a:hover {
   padding-left: 1rem; }
 
 .projectsArea {
-  margin-top: 10rem; }
+  margin-top: 5.25rem; }
 
 .mainSection {
   position: absolute;

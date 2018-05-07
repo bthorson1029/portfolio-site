@@ -6,6 +6,7 @@ import Project from './Project.js';
 import ProjectsSection from './ProjectsSection.js';
 import {data} from './ProjectsSection.js';
 import ParticleModule from './ParticleModule.js';
+import SliderComponent from './SliderComponent.js';
 
 
 
@@ -66,34 +67,7 @@ function Projects(props) {
 							<hr />
 							<div className="row">								
 								<div className="col-lg-12">
-									<img className="img-fluid projectImageLarge" src={project.projectImage} alt={project.name} />
-								</div>
-							</div>
-							<div className="row">
-								<div className="col-lg-12 projectContentArea_B">
-									<h2>Initial Challenge</h2>
-								</div>
-								<div className="col-lg-6 projectContentArea_B">
-									<p>{project.content}</p>
-								</div>
-								<div className="col-lg-6 projectContentArea_B">
-									<p>{project.content}</p>
-								</div>
-							</div>
-							<div className="row">								
-								<div className="col-lg-12">
-									<img className="img-fluid projectImageLarge" src={project.projectImage} alt={project.name} />
-								</div>
-							</div>
-							<div className="row">
-								<div className="col-lg-12 projectContentArea_B">
-									<h2>Wireframes</h2>
-								</div>
-								<div className="col-lg-6 projectContentArea_B">
-									<p>{project.content}</p>
-								</div>
-								<div className="col-lg-6 projectContentArea_B">
-									<p>{project.content}</p>
+									<SliderComponent {...project}/>
 								</div>
 							</div>
 						</div>
