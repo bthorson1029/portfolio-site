@@ -164,6 +164,7 @@ class ProjectsSection extends Component {
 				imageUrl={project.imageUrl}
 				brief={project.brief}
 				tech={project.tech}
+				projectUrl={project.projectUrl}
 				key={index}
 			/></div>)
 
