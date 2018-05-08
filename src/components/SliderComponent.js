@@ -14,7 +14,7 @@ export default class SimpleSlider extends Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       draggable: true,
-      
+      fade: true,
       lazyLoad: true
     };
     return (

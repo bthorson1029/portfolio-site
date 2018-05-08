@@ -12,7 +12,7 @@ const data = {
 					'id': 1,
 					'name': 'Cady Studios',
 					'date': 'January 2018',
-					'type': 'UI/UX | Front End Development',
+					'type': 'UI/UX Design | Front End Development',
 					'projectUrl': 'http://store.cadystudios.com',
 					'imageUrl': require('../assets/images/projectOneImage.png'),
 					'projectImage': require('../assets/images/CS-Project-4.png'),
@@ -20,13 +20,12 @@ const data = {
 					'tech': 'HTML, CSS, JS, Bootstrap, Kentico, Sketch, InVision, Adobe Illustrator',
 					'slides': [
 							require('../assets/images/CS-Project-Homepage.png'),
-							require('../assets/images/CS-Project-Homepage-Mobile.png'),
 							require('../assets/images/CS-Project-Scenes.png'),
-							require('../assets/images/CS-Project-Scenes-Mobile.png'),
 							require('../assets/images/CS-Project-Sessions.png'),
+							require('../assets/images/CS-Project-Homepage-Mobile.png'),
+							require('../assets/images/CS-Project-Scenes-Mobile.png'),
 							require('../assets/images/CS-Project-Sessions-Mobile.png')
-						
-					],
+							],
 					'content': `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
 											Quasi molestiae, voluptate magnam! Eius eaque, explicabo autem possimus repellendus sit, cum. 
 											Ipsum, aliquid. Exercitationem earum ipsa sed odio repellendus fugiat, adipisci nihil! 
@@ -39,7 +38,7 @@ const data = {
 					'id': 2,
 					'name': 'SWP Connect',
 					'date': 'March 2018',
-					'type': 'UI/UX',
+					'type': 'UI/UX Design',
 					'projectUrl': '',
 					'imageUrl': require('../assets/images/projectTwoImage.png'),
 					'projectImage': require('../assets/images/StoneMountain-iPhone.png'),
@@ -62,7 +61,7 @@ const data = {
 					'id': 3,
 					'name': 'Carzilla',
 					'date': 'November 2017',
-					'type': 'UI/UX',
+					'type': 'UI/UX Design',
 					'projectUrl': '',
 					'imageUrl': require('../assets/images/projectThreeImage.png'),
 					'projectImage': require('../assets/images/CZ-Project-1.png'),
@@ -85,7 +84,7 @@ const data = {
 					'id': 4,
 					'name': 'Stone Mountain Park',
 					'date': 'September 2017',
-					'type': 'UI/UX',
+					'type': 'UI/UX Design',
 					'projectUrl': '',
 					'imageUrl': require('../assets/images/projectFourImage.png'),
 					'projectImage': require('../assets/images/StoneMountain-iPhone.png'),
@@ -93,6 +92,28 @@ const data = {
 					'tech': 'Sketch, InVision, Adobe Illustrator',
 					'slides': [
 							require('../assets/images/projectOneImage.png'),
+							require('../assets/images/StoneMountain-iPhone.png')
+					],
+					'content': `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+											Deserunt minima quod nesciunt beatae nemo, cupiditate. 
+											Obcaecati magnam possimus natus iste in autem itaque! 
+											Natus mollitia eveniet totam odit dolorum odio iste nulla saepe praesentium excepturi quis iure esse ipsam, sint maiores a id quam perferendis ipsum amet. 
+											Numquam odit deserunt esse quibusdam sapiente optio sunt facilis, delectus enim itaque quis non sit qui, eveniet incidunt vel in quasi rerum nulla, perferendis ducimus fuga! 
+											Aspernatur consequuntur corporis recusandae adipisci, vero tenetur rem, quidem in tempore, possimus natus perspiciatis. 
+											Harum ipsam distinctio, eos, aliquid maiores neque natus, illo adipisci, quos laboriosam recusandae.`,
+				},
+				{
+					'id': 5,
+					'name': 'Adelman Travel Group',
+					'date': 'August 2017',
+					'type': 'UI/UX Design',
+					'projectUrl': '',
+					'imageUrl': require('../assets/images/Adelman-ProjectPhoto.png'),
+					'projectImage': require('../assets/images/StoneMountain-iPhone.png'),
+					'brief': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ducimus mollitia, impedit voluptatibus minima rerum, cumque, maxime repudiandae et voluptas iure dolorem asperiores, illum voluptate? Repudiandae quis magnam enim, quidem.',
+					'tech': 'Sketch, InVision, Adobe Illustrator, Adobe Photoshop',
+					'slides': [
+							require('../assets/images/Adelman-Homepage.png'),
 							require('../assets/images/StoneMountain-iPhone.png')
 					],
 					'content': `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
@@ -135,7 +156,7 @@ class ProjectsSection extends Component {
 	}
 
 	render() {
-		const projects = this.state.works.map((project, index) => <div className="grid"><Project 
+		const projects = this.state.works.map((project, index) => <div className="col-lg-4"><Project 
 				id={project.id}
 				name={project.name}
 				date={project.date}
@@ -153,7 +174,9 @@ class ProjectsSection extends Component {
 						<h1>Work</h1>
 					</div>
 						<div className="projectsArea">
-							{ projects }
+							<div className="row">
+								{ projects }
+							</div>
 						</div>
 					</div>
 					<ParticleModule />

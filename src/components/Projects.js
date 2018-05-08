@@ -54,20 +54,15 @@ function Projects(props) {
 							</div>
 						<hr />
 						<div className="contentZone">
-							<div className="row">								
-								<div className="col-lg-8 offset-lg-2">
-									<SliderComponent {...project}/>
-								</div>
-							</div>
 							<div className="row">
-								<div className="col-lg-12">
-									<div className="projectContentArea">
+								<div className="col-lg-4 projectContentArea">
 											<h2>Project Summary</h2>
 											<p>{project.brief}</p>
 									</div>
+								<div className="col-lg-8">
+									<SliderComponent {...project}/>
 								</div>
-							</div>
-							<hr />
+							</div>							
 						</div>
 					</div>
 				</div>

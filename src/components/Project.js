@@ -12,22 +12,22 @@ export default function Project(props){
 
 	return (
 		<div>
-			<Link to={`/Projects/${projectId}`}>
 			<div className="project">
-				<figure className="effect-sadie">
-					<img className="projectImage img-fluid"
-						src={props.imageUrl}
-						alt={props.name}
-						/>
-					<figcaption>
-							<div className="projectInfoSmall">
-								<div className="projectType"><p>{props.type}</p></div>
-							</div>
-							<div className="projectTitle"><h2>{props.name}</h2></div>
-					</figcaption>
-				</figure>
+				<Link to={`/Projects/${projectId}`}>
+					<div className="effect-sadie projectContainer">
+						<img className="projectImage img-fluid"
+							src={props.imageUrl}
+							alt={props.name}
+							/>
+							<h2>View Project</h2>
+					</div>
+				</Link>
+				<div className="projectDetails">
+					<div className="projectType"><p>{props.type}</p></div>
+					<div className="projectTitle"><h3>{props.name}</h3></div>
+					<a href={props.projectUrl} style={{color: '#dd425c'}}target="_blank">Visit Website</a>
+				</div>
 			</div>
-			</Link>
 		</div>
 	);
 };

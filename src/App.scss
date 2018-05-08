@@ -13,6 +13,9 @@ $Typeface: 'Proxima Nova', sans-serif;
 body {
   font-family: $Typeface !important;
   margin: 0;
+}
+
+body, h1, h2, h3, h4, h5, p, a {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -181,27 +184,16 @@ a:hover {
   width: 100%;
 }
 
-.panel-right {
-  float: right;
-}
-
-.panel-left {
-  float: left;
-}
-
-.projectInfo {
-  position: absolute;
-  padding-left: 2rem;
-  opacity: 0;
-}
-
-.projectInfoSmall {
-  display: inline-flex;
-  justify-content: space-around;
-}
-
 .projectTitle {
-  letter-spacing: 1px;
+  margin-top: -0.5rem;
+}
+
+.projectTitle > h3 {
+  font-weight: 800 !important;
+  color: $carbon;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+
 }
 
 .project-section {
@@ -220,7 +212,7 @@ a:hover {
   margin-top: 7.5rem;
   color: $pure-white;
   font-family: $Typeface;
-  padding-left: 1rem;
+  text-align: center;
 }
 
 .projectsArea {
@@ -231,6 +223,14 @@ a:hover {
   position: absolute;
   width: 100%;
   height: 600px;
+}
+
+.project {
+  margin-bottom: 4rem;
+}
+
+.projectDetails {
+  margin-top: 1.5rem;
 }
 
 
@@ -257,6 +257,7 @@ a:hover {
   font-weight: 800;
   margin-top: 8.5rem;
   color: $pure-white;
+  text-align: center;
 }
 
 .projectInfoBox {
@@ -276,6 +277,7 @@ a:hover {
 
 .contentZone {
   margin-bottom: 4.5rem;
+
 }
 
 .projectContentArea {
