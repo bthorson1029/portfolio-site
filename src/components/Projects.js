@@ -48,18 +48,18 @@ function Projects(props) {
 									<div className="projectBrief">
 										<h5>Brief</h5>
 										<p>{project.brief}</p>
-										<a href={project.projectUrl} target="_blank"><button className="btn btn-primary projectButton">Visit Website</button></a>
+										<a href={project.projectUrl} target="_blank"><button className="btn btn-primary projectButton">Visit Company Website</button></a>
 									</div>
 								</div>
 							</div>
 						<hr />
 						<div className="contentZone">
 							<div className="row">
-								<div className="col-lg-4 projectContentArea">
+								{/*<div className="col-lg-4 projectContentArea">
 											<h2>Project Summary</h2>
-											<p>{project.brief}</p>
-									</div>
-								<div className="col-lg-8">
+											<p>{project.content}</p>
+									</div>*/}
+								<div className="col-lg-12">
 									<SliderComponent {...project}/>
 								</div>
 							</div>							

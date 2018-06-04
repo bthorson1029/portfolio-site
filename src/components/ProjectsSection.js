@@ -13,10 +13,10 @@ const data = {
 					'name': 'Cady Studios',
 					'date': 'January 2018',
 					'type': 'UI/UX Design | Front End Development',
-					'projectUrl': 'http://store.cadystudios.com',
+					'projectUrl': 'https://store.cadystudios.com/',
 					'imageUrl': require('../assets/images/projectOneImage.png'),
 					'projectImage': require('../assets/images/CS-Project-4.png'),
-					'brief': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni molestiae pariatur accusamus, dolores itaque corrupti, beatae doloremque vero fugiat quos odio, iusto debitis cum aut harum ipsam, quam reprehenderit. Expedita!',
+					'brief': 'To build a responsive and intuitive photo ordering and appointment scheduling platform built on the Kentico CMS. The Kentico CMS backend was required to allow marketing and manangment positions to make adjustments to the website quickly and easily.',
 					'tech': 'HTML, CSS, JS, Bootstrap, Kentico, Sketch, InVision, Adobe Illustrator',
 					'slides': [
 							require('../assets/images/CS-Project-Homepage.png'),
@@ -26,20 +26,14 @@ const data = {
 							require('../assets/images/CS-Project-Scenes-Mobile.png'),
 							require('../assets/images/CS-Project-Sessions-Mobile.png')
 							],
-					'content': `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-											Quasi molestiae, voluptate magnam! Eius eaque, explicabo autem possimus repellendus sit, cum. 
-											Ipsum, aliquid. Exercitationem earum ipsa sed odio repellendus fugiat, adipisci nihil! 
-											Ratione blanditiis assumenda fugit ipsa ab officia tenetur consequatur autem nostrum iure dicta fugiat deleniti placeat laboriosam voluptate consectetur, itaque sit nesciunt unde dolores, reprehenderit. 
-											Consequatur nostrum atque illo natus incidunt sed sapiente praesentium repellendus tempore, nisi sit nihil? 
-											Quod provident non, delectus. Maiores magnam aliquam, obcaecati itaque totam quam sed quis nihil tempore debitis quo. 
-											Magnam est cumque, aspernatur et nisi labore nemo odio, praesentium rem distinctio obcaecati!`,
+					'content': `CadyStudios is a family-owned school photography business that specializes in magazine-quality photos for students of all backgrounds and interests.`,
 				},
 				{
 					'id': 2,
 					'name': 'SWP Connect',
 					'date': 'March 2018',
 					'type': 'UI/UX Design',
-					'projectUrl': '',
+					'projectUrl': 'https://swpconnect.com/',
 					'imageUrl': require('../assets/images/projectTwoImage.png'),
 					'projectImage': require('../assets/images/StoneMountain-iPhone.png'),
 					'brief': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab tenetur quo, harum temporibus veritatis sapiente aliquam. Perferendis reprehenderit dolorum eius, harum necessitatibus. Placeat voluptatum soluta, veniam impedit ullam temporibus. Laboriosam.',
@@ -62,7 +56,7 @@ const data = {
 					'name': 'Carzilla',
 					'date': 'November 2017',
 					'type': 'UI/UX Design',
-					'projectUrl': '',
+					'projectUrl': 'http://carzillaapp.com/',
 					'imageUrl': require('../assets/images/projectThreeImage.png'),
 					'projectImage': require('../assets/images/CZ-Project-1.png'),
 					'brief': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi sit saepe, ducimus velit officia rem similique aliquid, quisquam magnam ea id fuga est facere dicta iste consequuntur minus adipisci maiores?',
@@ -85,7 +79,7 @@ const data = {
 					'name': 'Stone Mountain Park',
 					'date': 'September 2017',
 					'type': 'UI/UX Design',
-					'projectUrl': '',
+					'projectUrl': 'https://www.stonemountainpark.com/',
 					'imageUrl': require('../assets/images/projectFourImage.png'),
 					'projectImage': require('../assets/images/StoneMountain-iPhone.png'),
 					'brief': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ducimus mollitia, impedit voluptatibus minima rerum, cumque, maxime repudiandae et voluptas iure dolorem asperiores, illum voluptate? Repudiandae quis magnam enim, quidem.',
@@ -107,7 +101,7 @@ const data = {
 					'name': 'Adelman Travel Group',
 					'date': 'August 2017',
 					'type': 'UI/UX Design',
-					'projectUrl': '',
+					'projectUrl': 'https://www.adelmantravel.com/',
 					'imageUrl': require('../assets/images/Adelman-ProjectPhoto.png'),
 					'projectImage': require('../assets/images/StoneMountain-iPhone.png'),
 					'brief': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ducimus mollitia, impedit voluptatibus minima rerum, cumque, maxime repudiandae et voluptas iure dolorem asperiores, illum voluptate? Repudiandae quis magnam enim, quidem.',
