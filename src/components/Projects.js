@@ -24,10 +24,9 @@ function Projects(props) {
 		<div className="projectsCanvas">
 			<div className="projectHero" key={project.id}>
 				<div className="container">
-					
-						<div className="projectHeading">
-							<h1>{project.name}</h1>
-						</div>
+					<div className="projectHeading">
+						<h1>{project.name}</h1>
+					</div>
 						<div className="projectMain">
 							<div className="projectInfoBox row">
 								<div className="projectInfoLeft col-md-6">
@@ -67,8 +66,8 @@ function Projects(props) {
 					</div>
 				</div>
 			</div>
-			<ParticleModule />
-		</div>
+		<ParticleModule />
+	</div>
 	);
 }
 

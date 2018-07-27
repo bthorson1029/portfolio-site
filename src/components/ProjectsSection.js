@@ -164,7 +164,7 @@ class ProjectsSection extends Component {
 
 		return (
 			<div className="projectsCanvas">
-				<div className="container project-section">
+				<div className="container">
 					<div className="projects-title">
 						<h1>Work</h1>
 					</div>

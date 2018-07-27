@@ -12,11 +12,11 @@ class ParticleModule extends Component {
 								      value: 60,
 								      density: {
 								        enable: true,
-								        value_area: 1000
+								        value_area: 4000
 								      }
 								    },
 								    color: {
-								      value: "#dd425c"
+								      value: "#ff0030"
 								    },
 								    shape: {
 								      type: "circle",
@@ -51,8 +51,8 @@ class ParticleModule extends Component {
 								    line_linked: {
 								      enable: true,
 								      distance: 100,
-								      color: "#dd425c",
-								      opacity: 0.4,
+								      color: "#ff0030",
+								      opacity: 0.2,
 								      width: 2
 								    },
 								    move: {
@@ -94,7 +94,7 @@ class ParticleModule extends Component {
 								        distance: 300,
 								        size: 5,
 								        duration: 2,
-								        opacity: 8,
+								        opacity: 10,
 								        speed: 3
 								      },
 								      repulse: {
@@ -113,7 +113,7 @@ class ParticleModule extends Component {
             	}}
               style={{
                 width: '100%',
-                background: `#353838`,
+                background: `#fff`,
               }}
             />
 					)
