@@ -35,13 +35,11 @@ const data = {
 					'type': 'UI/UX Design',
 					'projectUrl': 'https://swpconnect.com/',
 					'imageUrl': require('../assets/images/projectTwoImage.png'),
-					'projectImage': require('../assets/images/StoneMountain-iPhone.png'),
+					'projectImage': require('../assets/images/SWP-Project-1.png'),
 					'brief': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab tenetur quo, harum temporibus veritatis sapiente aliquam. Perferendis reprehenderit dolorum eius, harum necessitatibus. Placeat voluptatum soluta, veniam impedit ullam temporibus. Laboriosam.',
 					'tech': 'Sketch, InVision, Adobe Photoshop',
 					'slides': [
-							require('../assets/images/StoneMountain-iPhone.png'),
-							require('../assets/images/projectOneImage.png'),
-							require('../assets/images/projectOneImage.png')
+							require('../assets/images/SWP-Project-1.png'),
 					],
 					'content': `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
 											Incidunt recusandae, deleniti corporis sunt odit molestiae nobis nesciunt. 
@@ -62,10 +60,7 @@ const data = {
 					'brief': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi sit saepe, ducimus velit officia rem similique aliquid, quisquam magnam ea id fuga est facere dicta iste consequuntur minus adipisci maiores?',
 					'tech': 'Sketch, InVision, Adobe Photoshop, Adobe Illustrator',
 					'slides': [
-							require('../assets/images/CZ-Project-1.png'),
-							require('../assets/images/projectOneImage.png'),
-							require('../assets/images/projectOneImage.png'),
-							require('../assets/images/projectOneImage.png')
+							require('../assets/images/CZ-Project-1.png')
 					],
 					'content': `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
 											Enim nisi, fuga, illo cum dolore ratione nesciunt culpa, nemo rem sequi voluptate obcaecati! 
@@ -85,7 +80,6 @@ const data = {
 					'brief': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ducimus mollitia, impedit voluptatibus minima rerum, cumque, maxime repudiandae et voluptas iure dolorem asperiores, illum voluptate? Repudiandae quis magnam enim, quidem.',
 					'tech': 'Sketch, InVision, Adobe Illustrator',
 					'slides': [
-							require('../assets/images/projectOneImage.png'),
 							require('../assets/images/StoneMountain-iPhone.png')
 					],
 					'content': `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
@@ -107,8 +101,7 @@ const data = {
 					'brief': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ducimus mollitia, impedit voluptatibus minima rerum, cumque, maxime repudiandae et voluptas iure dolorem asperiores, illum voluptate? Repudiandae quis magnam enim, quidem.',
 					'tech': 'Sketch, InVision, Adobe Illustrator, Adobe Photoshop',
 					'slides': [
-							require('../assets/images/Adelman-Homepage.png'),
-							require('../assets/images/StoneMountain-iPhone.png')
+							require('../assets/images/Adelman-Homepage.png')
 					],
 					'content': `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
 											Deserunt minima quod nesciunt beatae nemo, cupiditate. 

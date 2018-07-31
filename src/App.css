@@ -154,24 +154,6 @@ a:hover {
   width: 100%;
   left: 22%; }
 
-.projectCanvas canvas {
-  max-height: 600px;
-  min-height: 600px;
-  max-width: 100vw;
-  width: 100%;
-  top: 0;
-  position: absolute;
-  z-index: -20; }
-
-.projectsCanvas canvas {
-  max-height: 300px;
-  min-height: 300px;
-  max-width: 100vw;
-  width: 100%;
-  top: 0;
-  position: absolute;
-  z-index: -20; }
-
 .hero-text {
   font-size: 5rem;
   color: #353838;
@@ -218,6 +200,18 @@ a:hover {
   border-color: #ff0030;
   color: #ff0030 !important;
   border-width: 2px !important; }
+
+.btn-secondary.projectButton {
+  background-color: transparent !important;
+  border-color: #ff0030;
+  color: #ff0030 !important;
+  border-width: 2px !important; }
+
+.btn-secondary.projectButton:hover {
+  background-color: #ff0030 !important;
+  border-color: #ff0030 !important;
+  border-width: 2px !important;
+  color: #ffffff !important; }
 
 .logoHero {
   max-width: 400px;
@@ -272,18 +266,28 @@ a:hover {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   padding: 1rem;
-  text-decoration: none; }
+  text-decoration: none;
+  border-radius: 2px; }
 
 .project:hover {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  cursor: pointer; }
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
 
 .projectDetails {
   margin-top: 1.5rem; }
 
+.projectsCanvas canvas {
+  max-height: 300px;
+  max-width: 100vw;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  z-index: -20; }
+
+.backToProjects {
+  text-align: center; }
+
 .projectHero {
   width: 100%;
-  height: 600px;
   color: #353838;
   position: absolute; }
 
@@ -298,7 +302,7 @@ a:hover {
   text-transform: uppercase;
   font-weight: 800;
   margin-top: 8.5rem;
-  color: #ffffff;
+  color: #353838;
   text-align: center; }
 
 .projectInfoBox {

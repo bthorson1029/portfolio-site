@@ -26,21 +26,24 @@ function Projects(props) {
 				<div className="container">
 					<div className="projectHeading">
 						<h1>{project.name}</h1>
+						<div className="backToProjects">
+							<Link to={`/Projects/`}><button className="btn btn-secondary projectButton">Back to Projects</button></Link>
+						</div>
 					</div>
 						<div className="projectMain">
 							<div className="projectInfoBox row">
 								<div className="projectInfoLeft col-md-6">
-									<div className="projectRole">
-										<h5>Role</h5>
-										<p>{project.type}</p>
-									</div>
+										<div className="projectRole">
+											<h5>Role</h5>
+											<p>{project.type}</p>
+										</div>
+										<div className="projectDate">
+											<h5>Date</h5>
+											<p>{project.date}</p>
+										</div>
 									<div className="projectTech">
 										<h5>Tech</h5>
 										<p>{project.tech}</p>
-									</div>
-									<div className="projectDate">
-										<h5>Date</h5>
-										<p>{project.date}</p>
 									</div>
 								</div>
 								<div className="projectInfoRight col-md-6">

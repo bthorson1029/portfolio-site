@@ -9,7 +9,7 @@ class ParticleModule extends Component {
               params={{
             		particles: {
 								    number: {
-								      value: 60,
+								      value: 80,
 								      density: {
 								        enable: true,
 								        value_area: 4000
