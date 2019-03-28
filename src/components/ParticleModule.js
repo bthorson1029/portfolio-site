@@ -113,7 +113,10 @@ class ParticleModule extends Component {
             	}}
               style={{
                 width: '100%',
-                background: `#fff`,
+								background: `#fff`,
+								position: 'fixed',
+								zIndex: '-10',
+								top: '0',
               }}
             />
 					)

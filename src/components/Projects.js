@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import '../App.js';
-import Button from './Button.js';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Project from './Project.js';
-import ProjectsSection from './ProjectsSection.js';
 import {data} from './ProjectsSection.js';
 import ParticleModule from './ParticleModule.js';
 import SliderComponent from './SliderComponent.js';

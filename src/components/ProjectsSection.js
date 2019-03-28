@@ -4,8 +4,6 @@ import Projects from './Projects.js';
 import Project from './Project.js';
 import ParticleModule from './ParticleModule.js';
 
-
-
 const data = {
 			projects: [ 
 				{
@@ -16,7 +14,7 @@ const data = {
 					'projectUrl': 'https://store.cadystudios.com/',
 					'imageUrl': require('../assets/images/projectOneImage.png'),
 					'projectImage': require('../assets/images/CS-Project-4.png'),
-					'brief': 'To build a responsive and intuitive photo ordering and appointment scheduling platform built on the Kentico CMS. The Kentico CMS backend was required to allow marketing and manangment positions to make adjustments to the website quickly and easily.',
+					'brief': 'For Cady Studios, I was tasked to build a responsive and intuitive photo ordering and appointment scheduling platform built on the Kentico CMS. The Kentico CMS backend was required to allow marketing and manangment positions to make adjustments to the website quickly and easily.',
 					'tech': 'HTML, CSS, JS, Bootstrap, Kentico, Sketch, InVision, Adobe Illustrator',
 					'slides': [
 							require('../assets/images/CS-Project-Homepage.png'),
@@ -36,7 +34,7 @@ const data = {
 					'projectUrl': 'https://swpconnect.com/',
 					'imageUrl': require('../assets/images/projectTwoImage.png'),
 					'projectImage': require('../assets/images/SWP-Project-1.png'),
-					'brief': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab tenetur quo, harum temporibus veritatis sapiente aliquam. Perferendis reprehenderit dolorum eius, harum necessitatibus. Placeat voluptatum soluta, veniam impedit ullam temporibus. Laboriosam.',
+					'brief': 'For SWP Connect, I worked with the Vice President to design an approachable and informative landing page for their new educational series for those wanting to plan for retirement.',
 					'tech': 'Sketch, InVision, Adobe Photoshop',
 					'slides': [
 							require('../assets/images/SWP-Project-1.png'),
@@ -57,7 +55,7 @@ const data = {
 					'projectUrl': 'http://carzillaapp.com/',
 					'imageUrl': require('../assets/images/projectThreeImage.png'),
 					'projectImage': require('../assets/images/CZ-Project-1.png'),
-					'brief': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi sit saepe, ducimus velit officia rem similique aliquid, quisquam magnam ea id fuga est facere dicta iste consequuntur minus adipisci maiores?',
+					'brief': 'Carzilla is a mobile app that aims to disrupt the car buying industry. I helped the Carzilla team design marketing materials including a newsletter that was sent out dealerships around the United States.',
 					'tech': 'Sketch, InVision, Adobe Photoshop, Adobe Illustrator',
 					'slides': [
 							require('../assets/images/CZ-Project-1.png')
@@ -77,7 +75,7 @@ const data = {
 					'projectUrl': 'https://www.stonemountainpark.com/',
 					'imageUrl': require('../assets/images/projectFourImage.png'),
 					'projectImage': require('../assets/images/StoneMountain-iPhone.png'),
-					'brief': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ducimus mollitia, impedit voluptatibus minima rerum, cumque, maxime repudiandae et voluptas iure dolorem asperiores, illum voluptate? Repudiandae quis magnam enim, quidem.',
+					'brief': 'Stone Mountain Park, located in Atlanta, has a myriad of events and activities for those visiting the park. My job was to design a mobile app that would help new and veteran visitors figure out which activities would suit them the best.',
 					'tech': 'Sketch, InVision, Adobe Illustrator',
 					'slides': [
 							require('../assets/images/StoneMountain-iPhone.png')
@@ -98,7 +96,7 @@ const data = {
 					'projectUrl': 'https://www.adelmantravel.com/',
 					'imageUrl': require('../assets/images/Adelman-ProjectPhoto.png'),
 					'projectImage': require('../assets/images/StoneMountain-iPhone.png'),
-					'brief': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam ducimus mollitia, impedit voluptatibus minima rerum, cumque, maxime repudiandae et voluptas iure dolorem asperiores, illum voluptate? Repudiandae quis magnam enim, quidem.',
+					'brief': 'Adelman Travel Group is one of the largest private travel management companies in North America. I assisted the Adelman team by designing a new modern and responsive website.',
 					'tech': 'Sketch, InVision, Adobe Illustrator, Adobe Photoshop',
 					'slides': [
 							require('../assets/images/Adelman-Homepage.png')
