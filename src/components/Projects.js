@@ -28,8 +28,14 @@ function Projects(props) {
 						</div>
 					</div>
 						<div className="projectMain">
-							<div className="projectInfoBox row">
-								<div className="projectInfoLeft col-md-6">
+							<div className="contentZone">
+								<div className="row">
+									{/*<div className="col-lg-4 projectContentArea">
+												<h2>Project Summary</h2>
+												<p>{project.content}</p>
+										</div>*/}
+								<div className="projectInfoBox col-lg-5">
+									<div className="projectInfoLeft col-lg-12">
 										<div className="projectRole">
 											<h5>Role</h5>
 											<p>{project.type}</p>
@@ -38,31 +44,26 @@ function Projects(props) {
 											<h5>Date</h5>
 											<p>{project.date}</p>
 										</div>
-									<div className="projectTech">
-										<h5>Tech</h5>
-										<p>{project.tech}</p>
+										<div className="projectTech">
+											<h5>Tech</h5>
+											<p>{project.tech}</p>
+										</div>
 									</div>
-								</div>
-								<div className="projectInfoRight col-md-6">
-									<div className="projectBrief">
-										<h5>Brief</h5>
-										<p>{project.brief}</p>
-										<a href={project.projectUrl} target="_blank"><button className="btn btn-primary projectButton">Visit Company Website</button></a>
+									<div className="projectInfoRight col-lg-12">
+										<div className="projectBrief">
+											<h5>Brief</h5>
+											<p>{project.brief}</p>
+											<a href={project.projectUrl} target="_blank"><button className="btn btn-primary projectButton">Visit Company Website</button></a>
+										</div>
+									</div>
+								</div>	
+									<div className="col-lg-7 p-0">
+										<SliderComponent {...project} />
 									</div>
 								</div>
 							</div>
-						<hr />
-						<div className="contentZone">
-							<div className="row">
-								{/*<div className="col-lg-4 projectContentArea">
-											<h2>Project Summary</h2>
-											<p>{project.content}</p>
-									</div>*/}
-								<div className="col-lg-12">
-									<SliderComponent {...project}/>
-								</div>
-							</div>							
-						</div>
+						{/* <hr /> */}
+
 					</div>
 				</div>
 			</div>

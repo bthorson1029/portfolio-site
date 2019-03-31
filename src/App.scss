@@ -32,7 +32,7 @@ h5 {
 p {
   font-size: 1rem !important;
   line-height: 1.5rem !important;
-  font-family: 'Lato' !important;
+  font-family: $Typeface;
   color: $carbon !important;
 
 }
@@ -125,7 +125,7 @@ a:hover {
   text-transform: uppercase;
   font-weight: 800;
   letter-spacing: 3px;
-  position: relative;
+  // position: relative;
 }
 
 .hero-subtext {
@@ -133,7 +133,7 @@ a:hover {
   font-weight: 400;
   font-family: 'Lato';
   font-size: 1rem;
-  max-width: 860px;
+  max-width: 800px;;
   line-height: 1.5rem;
   letter-spacing: 1px;
 }
@@ -141,13 +141,36 @@ a:hover {
 .hero-content {
   width: 100%;
   height: auto;
-  position: absolute;
-  margin-top: 18rem;
+  // position: absolute;
+  margin-top: 16rem;
   max-width: 960px;
 }
-
+@media only screen and (max-width: 480px) {
+  .hero-text {
+    font-size: 3rem;
+  }
+  .hero-subtext {
+    font-size: 0.9rem;
+  }
+  .hero-content {
+    margin-top: 8rem;
+    position: relative;
+  }
+  .heroButton {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .hero-content {
+    margin-top: 8rem;
+  }
+  .logoMain {
+    margin-top: -0.5rem;
+  }
+}
 .heroButton {
   margin-top: 1rem;
+  width: 30%;
   background-color: $primaryColor !important;
   border-color: $primaryColor !important;
   border-width: 2px !important;
@@ -310,19 +333,16 @@ a:hover {
 
 .projectInfoBox {
   width: 100%;
-  display: flex;
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
-.projectInfoLeft {
-  width: 50%;
-}
+// .projectInfoLeft {
+//   width: 50%;
+// }
 
-
-
-.projectInfoRight {
-  width: 50%;
-}
+// .projectInfoRight {
+//   width: 50%;
+// }
 
 .contentZone {
   margin-bottom: 4.5rem;

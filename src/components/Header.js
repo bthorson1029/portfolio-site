@@ -14,16 +14,16 @@ class Header extends Component {
 		  			<Link to="/">
 		  				<img className="logoMain" src={require("../assets/images/logo.svg")}/>
 						</Link>
-		  			<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-		    			<span className="navbar-toggler-icon"></span>
-		  			</button>
-		  			<div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-					    <div className="navbar-nav">
+						<div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+					    <div className="nav navbar-nav">
 					      <Link to="/Projects" className="nav-item nav-link">Work</Link>
 					      <Link to="/CV" className="nav-item nav-link">CV</Link>
 					      <Link to="/Contact" className="nav-item nav-link">Contact</Link>
 					    </div>
 		  			</div>
+		  			<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		    			<span className="navbar-toggler-icon"></span>
+		  			</button>
 	  			</div>
 				</nav>
 			</div>
