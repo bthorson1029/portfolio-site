@@ -27,7 +27,7 @@ class Hero extends Component {
 						<h1 className="hero-text">{heroText}</h1>
 						<h4 className="hero-subtext">Hi, my name is Bryce Thorson, and I'm a software designer and developer living and working in Atlanta.
 	I help agencies, startups & businesses bring their ideas to life through a refined design & development process.</h4>
-	<h4 className="hero-subtext">I am currently a software designer/devloper consultant at <a href="https://www.improving.com/" style={{ textDecoration: 'none', color: '#ff0030' }} target="_blank">Improving</a> in Northeast Atlanta, GA.</h4>
+	<h4 className="hero-subtext">I am currently a software designer/devloper consultant at <a href="https://www.improving.com/" style={{ textDecoration: 'none', color: '#ff0030' }} target="_blank" rel="noopen">Improving</a> in Northeast Atlanta, GA.</h4>
 						<Link to={projectLink.pathname}>
 							<button className="btn btn-primary heroButton">{projectLink.title}</button>
 						</Link>

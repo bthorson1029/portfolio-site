@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { data } from './ProjectsSection.js';
 import ParticleModule from './ParticleModule.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Mailto from 'react-protected-mailto';
 
 
 class CV extends Component {
@@ -21,7 +22,10 @@ class CV extends Component {
               <div className="resumeContactInfo">
                 <div className="contactEmail">
                   <FontAwesomeIcon icon="envelope" className="emailIcon" />
-                  <a href="mailto:brycethorson.design@gmail.com?subject=New Inquiry">Email</a>
+                  <Mailto
+                    email="brycethorson.design@gmail.com"
+                    headers={{ subject: "New Inquiry from Thorson Design Co." }}>
+                  </Mailto>
                 </div>
                 <div className="contactSocial">
                   <FontAwesomeIcon icon={['fab', 'dribbble-square']} className="socialIcon" />

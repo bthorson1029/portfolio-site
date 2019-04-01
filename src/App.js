@@ -7,6 +7,7 @@ import ProjectsSection from './components/ProjectsSection.js';
 import ProjectsPage from './components/ProjectsPage.js';
 import Projects from './components/Projects.js';
 import CV from './components/CV.js';
+import Contact from './components/Contact.js';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -27,6 +28,7 @@ class App extends Component {
 	        	<Route exact path="/Projects" component={ProjectsSection} />
 	        	<Route path="/Projects/:projectId" component={Projects} />
 						<Route exact path="/CV" component={CV} />
+						<Route exact path="/Contact" component={Contact} />
 	        </Switch>
 	      </div>
       </Router>

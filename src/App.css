@@ -201,7 +201,7 @@ a:hover {
   border-width: 2px !important; }
 
 .heroButton:hover {
-  background-color: rgba(0, 0, 0, 0) !important;
+  background-color: transparent !important;
   border-color: #ff0030;
   border-width: 2px !important;
   color: #ff0030 !important; }
@@ -212,13 +212,13 @@ a:hover {
   border-width: 2px !important; }
 
 .projectButton:hover {
-  background-color: rgba(0, 0, 0, 0) !important;
+  background-color: transparent !important;
   border-color: #ff0030;
   color: #ff0030 !important;
   border-width: 2px !important; }
 
 .btn-secondary.projectButton {
-  background-color: rgba(0, 0, 0, 0) !important;
+  background-color: transparent !important;
   border-color: #ff0030;
   color: #ff0030 !important;
   border-width: 2px !important; }
@@ -393,7 +393,7 @@ a:hover {
 
 .container.cvContainer .resumeContactInfo .contactSocial .socialIcon {
   font-size: 1.45rem;
-  margin-right: 1rem; }
+  margin-right: 0.5rem; }
 
 .container.cvContainer .resumeContactInfo .contactEmail a, .contactSocial a, .contactEmail a:hover, .contactSocial a:hover {
   color: #ff0030; }
