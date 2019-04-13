@@ -22,7 +22,7 @@ class Contact extends Component {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "contact-form": "contact", ...this.state })
+      body: encode({ "form-name": "contact-form", ...this.state })
     })
       .then(() => this.setState({ sent: true }, this.resetForm()))
       .catch(error => alert(error));
@@ -32,13 +32,13 @@ class Contact extends Component {
   };
 
   resetForm = () => {
-    setTimeout(function () { //Start the timer
+    setTimeout(function () {
       this.setState({
         name: '',
         message: '',
         email: '',
         buttonText: 'Message Sent'
-      }) //After 1 second, set render to true
+      })
     }.bind(this), 2000)
   }
 
@@ -49,7 +49,7 @@ class Contact extends Component {
     const { name, email, message } = this.state;
     return(
       <div className="contactCanvas container">
-        <form className="contact-form form-group" onSubmit={this.handleSubmit}>
+        <form className="contact-form form-group" method="POST" onSubmit={this.handleSubmit}>
           <input type="hidden" name="contact-form" value="contact" />
           <input 
             onChange={this.handleChange}
