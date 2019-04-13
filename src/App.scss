@@ -65,6 +65,18 @@ a:hover {
   position: relative;
 }
 
+button.btn.btn-primary {
+  background-color: $primaryColor;
+  color: $pure_white;
+  border: 2px solid $primaryColor;
+  transition: ease-in 100ms;
+}
+button.btn.btn-primary:hover {
+  background-color: $pure_white;
+  color: $primaryColor;
+  border: 2px solid $primaryColor;
+}
+
 //Logo
 .logoMain {
   width: 100%;
@@ -437,4 +449,11 @@ a:hover {
 }
 .container.cvContainer .rightColumn .cvItem p {
   margin-bottom: 0;
+}
+.container.contactCanvas {
+  margin-top: 8rem;
+}
+.container.contactCanvas .contact-form input, .container.contactCanvas .contact-form textarea {
+  margin: 1.5rem 0;
+  padding: 0.5rem;
 }
