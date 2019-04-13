@@ -49,7 +49,7 @@ class Contact extends Component {
     const { name, email, message } = this.state;
     return(
       <div className="contactCanvas container">
-        <form className="contact-form form-group" method="POST" onSubmit={this.handleSubmit}>
+        <form name="contact-form" className="contact-form form-group" method="POST" onSubmit={this.handleSubmit}>
           <input type="hidden" name="contact-form" value="contact" />
           <input 
             onChange={this.handleChange}
