@@ -24,12 +24,23 @@ class Contact extends Component {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "contact-form": "contact", ...this.state })
     })
-      .then(() => alert("Success!"))
+      .then(() => this.setState({ sent: true }, this.resetForm()))
       .catch(error => alert(error));
 
     e.preventDefault();
     this.setState({ buttonText: '...sending'});
   };
+
+  resetForm = () => {
+    setTimeout(function () { //Start the timer
+      this.setState({
+        name: '',
+        message: '',
+        email: '',
+        buttonText: 'Message Sent'
+      }) //After 1 second, set render to true
+    }.bind(this), 2000)
+  }
 
   handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
