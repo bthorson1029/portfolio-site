@@ -22,7 +22,7 @@ class Contact extends Component {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact-form", ...this.state })
+      body: encode({ "form-name": "contact", ...this.state })
     })
       .then(() => console.log(this.setState({ sent: true }), this.resetForm()))
       .catch(error => alert(error));
