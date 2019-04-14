@@ -37,7 +37,7 @@ class Contact extends Component {
         name: '',
         message: '',
         email: '',
-        buttonText: 'Message Sent!'
+        buttonText: 'Message Sent! Thank You!'
       })
     }.bind(this), 2000)
   }
@@ -49,6 +49,9 @@ class Contact extends Component {
     const { name, email, message } = this.state;
     return(
       <div className="contactCanvas container">
+        <div className="projects-title">
+          <h1>Contact</h1>
+        </div>
         <form name="contact-form" className="contact-form form-group" method="post" onSubmit={this.handleSubmit}>
           <input type="hidden" name="contact-form" value="contact" />
           <input 
@@ -80,7 +83,7 @@ class Contact extends Component {
           <div data-netlify-recaptcha="true"></div>
 
           <div className="buttonContainer">
-            <button type="submit" className="btn btn-primary">{this.state.buttonText}</button>
+            <button type="submit" className="btn btn-primary btn-block">{this.state.buttonText}</button>
           </div>
         </form>
         <ParticleModule />
