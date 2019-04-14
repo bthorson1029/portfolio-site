@@ -24,7 +24,7 @@ class Contact extends Component {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...this.state })
     })
-      .then(() => console.log(this.setState({ sent: true }), this.resetForm()))
+      .then(() => this.setState({ sent: true }), this.resetForm())
       .catch(error => alert(error));
 
     e.preventDefault();
@@ -37,7 +37,7 @@ class Contact extends Component {
         name: '',
         message: '',
         email: '',
-        buttonText: 'Message Sent'
+        buttonText: 'Message Sent!'
       })
     }.bind(this), 2000)
   }
