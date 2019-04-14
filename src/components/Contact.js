@@ -16,8 +16,6 @@ class Contact extends Component {
     this.state = { name: "", email: "", message: "", buttonText: "Send Message" };
   }
 
-  /* Here’s the juicy bit for posting the form submission */
-
   handleSubmit = e => {
     fetch("/", {
       method: "POST",

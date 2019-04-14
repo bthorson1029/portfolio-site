@@ -16,7 +16,7 @@ class Header extends Component {
 						<div className="collapse navbar-collapse" id="navbarNavAltMarkup">
 					    <div className="nav navbar-nav">
 					      <Link to="/Projects" className="nav-item nav-link">Work</Link>
-					      <Link to="/CV" className="nav-item nav-link">CV</Link>
+					      {/* <Link to="/CV" className="nav-item nav-link">CV</Link> */}
 					      <Link to="/Contact" className="nav-item nav-link">Contact</Link>
 					    </div>
 		  			</div>

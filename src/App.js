@@ -16,9 +16,19 @@ import { faDribbbleSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons
 
 library.add(fab, faEnvelope, faPhoneSquare, faDribbbleSquare, faLinkedin)
 
+const loader = document.querySelector('.loader');
+
+// if you want to show the loader when React loads data again
+const showLoader = () => loader.classList.remove('loader--hide');
+
+const hideLoader = () => loader.classList.add('loader--hide');
 
 class App extends Component {
-  render() {
+	componentDidMount() {
+		hideLoader();
+	}
+	
+	render() {
     return (
       <Router>
 	      <div className="App">
@@ -27,7 +37,7 @@ class App extends Component {
 	        <Switch>
 	        	<Route exact path="/Projects" component={ProjectsSection} />
 	        	<Route path="/Projects/:projectId" component={Projects} />
-						<Route exact path="/CV" component={CV} />
+						{/* <Route exact path="/CV" component={CV} /> */}
 						<Route exact path="/Contact" component={Contact} />
 	        </Switch>
 	      </div>
