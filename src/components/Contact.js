@@ -24,7 +24,7 @@ class Contact extends Component {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact-form", ...this.state })
     })
-      .then(() => this.setState({ sent: true }, this.resetForm()))
+      .then(() => console.log(this.setState({ sent: true }), this.resetForm()))
       .catch(error => alert(error));
 
     e.preventDefault();
@@ -49,8 +49,8 @@ class Contact extends Component {
     const { name, email, message } = this.state;
     return(
       <div className="contactCanvas container">
-        <form name="contact-form" className="contact-form form-group" method="POST" onSubmit={console.log(this.handleSubmit)}>
-          <input type="hidden" name="contact-form" value="contact-form" />
+        <form name="contact-form" className="contact-form form-group" method="post" onSubmit={this.handleSubmit}>
+          <input type="hidden" name="contact-form" value="contact" />
           <input 
             onChange={this.handleChange}
             name="name" 
