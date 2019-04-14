@@ -9,6 +9,9 @@ $snow-white: #efefef;
 $carbon: #353838;
 $Typeface: 'Proxima Nova', sans-serif;
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
 body {
   font-family: $Typeface !important;
@@ -79,7 +82,8 @@ button.btn.btn-primary:hover {
 
 //Logo
 .logoMain {
-  width: 100%;
+  min-width: 80px;
+  width: 120px;
   max-width: 120px;
   .st0{fill:#353838;}
   .st1{fill:#DF405A;}

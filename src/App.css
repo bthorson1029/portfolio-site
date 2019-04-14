@@ -72,6 +72,9 @@
   letter-spacing: 1px; }
 
 /***** Sadie *****/
+*, *::before, *::after {
+  box-sizing: border-box; }
+
 body {
   font-family: "Proxima Nova", sans-serif !important;
   margin: 0; }
@@ -128,7 +131,8 @@ button.btn.btn-primary:hover {
   border: 2px solid #ff0030; }
 
 .logoMain {
-  width: 100%;
+  min-width: 80px;
+  width: 120px;
   max-width: 120px; }
   .logoMain .st0 {
     fill: #353838; }
