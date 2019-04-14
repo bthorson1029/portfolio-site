@@ -24,12 +24,22 @@ class Contact extends Component {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...this.state })
     })
-      .then(() => this.setState({ sent: true }), this.resetForm())
+      .then(() => this.formSent())
       .catch(error => alert(error));
-
+    
     e.preventDefault();
     this.setState({ buttonText: '...sending'});
   };
+
+  formSent = () => {
+    setTimeout(function () {
+      this.setState({
+        buttonText: 'Message Sent! Thank You!',
+        sent: true
+      })
+      this.resetForm();
+    }.bind(this), 2500);
+  }
 
   resetForm = () => {
     setTimeout(function () {
@@ -37,9 +47,10 @@ class Contact extends Component {
         name: '',
         message: '',
         email: '',
-        buttonText: 'Message Sent! Thank You!'
+        buttonText: 'Send Message'
       })
     }.bind(this), 2000)
+
   }
 
   handleChange = e => this.setState({ [e.target.name]: e.target.value });
