@@ -8,23 +8,24 @@ const data = {
 			projects: [ 
 				{
 					'id': 1,
-					'name': 'Cady Studios',
-					'date': 'January 2018',
-					'type': 'UI/UX Design | Front End Development',
-					'projectUrl': 'https://store.cadystudios.com/',
-					'imageUrl': require('../assets/images/projectOneImage.png'),
-					'projectImage': require('../assets/images/CS-Project-4.png'),
-					'brief': 'For Cady Studios, I was tasked to build a responsive and intuitive photo ordering and appointment scheduling platform built on the Kentico CMS. The Kentico CMS backend was required to allow marketing and manangment positions to make adjustments to the website quickly and easily.',
-					'tech': 'HTML, CSS, JS, Bootstrap, Kentico, Sketch, InVision, Adobe Illustrator',
+					'name': 'Adelman Travel Group',
+					'date': 'August 2017',
+					'type': 'UI/UX Design',
+					'projectUrl': 'https://www.adelmantravel.com/',
+					'imageUrl': require('../assets/images/Adelman-ProjectPhoto.png'),
+					'projectImage': require('../assets/images/StoneMountain-iPhone.png'),
+					'brief': 'Adelman Travel Group is one of the largest private travel management companies in North America. I assisted the Adelman team by designing a new modern and responsive website.',
+					'tech': 'Sketch, InVision, Adobe Illustrator, Adobe Photoshop',
 					'slides': [
-							require('../assets/images/CS-Project-Homepage.png'),
-							require('../assets/images/CS-Project-Scenes.png'),
-							require('../assets/images/CS-Project-Sessions.png'),
-							require('../assets/images/CS-Project-Homepage-Mobile.png'),
-							require('../assets/images/CS-Project-Scenes-Mobile.png'),
-							require('../assets/images/CS-Project-Sessions-Mobile.png')
-							],
-					'content': `CadyStudios is a family-owned school photography business that specializes in magazine-quality photos for students of all backgrounds and interests.`,
+						require('../assets/images/Adelman-Homepage.png')
+					],
+					'content': `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+											Deserunt minima quod nesciunt beatae nemo, cupiditate. 
+											Obcaecati magnam possimus natus iste in autem itaque! 
+											Natus mollitia eveniet totam odit dolorum odio iste nulla saepe praesentium excepturi quis iure esse ipsam, sint maiores a id quam perferendis ipsum amet. 
+											Numquam odit deserunt esse quibusdam sapiente optio sunt facilis, delectus enim itaque quis non sit qui, eveniet incidunt vel in quasi rerum nulla, perferendis ducimus fuga! 
+											Aspernatur consequuntur corporis recusandae adipisci, vero tenetur rem, quidem in tempore, possimus natus perspiciatis. 
+											Harum ipsam distinctio, eos, aliquid maiores neque natus, illo adipisci, quos laboriosam recusandae.`,
 				},
 				{
 					'id': 2,
@@ -90,24 +91,23 @@ const data = {
 				},
 				{
 					'id': 5,
-					'name': 'Adelman Travel Group',
-					'date': 'August 2017',
-					'type': 'UI/UX Design',
-					'projectUrl': 'https://www.adelmantravel.com/',
-					'imageUrl': require('../assets/images/Adelman-ProjectPhoto.png'),
-					'projectImage': require('../assets/images/StoneMountain-iPhone.png'),
-					'brief': 'Adelman Travel Group is one of the largest private travel management companies in North America. I assisted the Adelman team by designing a new modern and responsive website.',
-					'tech': 'Sketch, InVision, Adobe Illustrator, Adobe Photoshop',
+					'name': 'Cady Studios',
+					'date': 'January 2018',
+					'type': 'UI/UX Design | Front End Development',
+					'projectUrl': 'https://store.cadystudios.com/',
+					'imageUrl': require('../assets/images/projectOneImage.png'),
+					'projectImage': require('../assets/images/CS-Project-4.png'),
+					'brief': 'For Cady Studios, I was tasked to build a responsive and intuitive photo ordering and appointment scheduling platform built on the Kentico CMS. The Kentico CMS backend was required to allow marketing and manangment positions to make adjustments to the website quickly and easily.',
+					'tech': 'HTML, CSS, JS, Bootstrap, Kentico, Sketch, InVision, Adobe Illustrator',
 					'slides': [
-							require('../assets/images/Adelman-Homepage.png')
+						require('../assets/images/CS-Project-Homepage.png'),
+						require('../assets/images/CS-Project-Scenes.png'),
+						require('../assets/images/CS-Project-Sessions.png'),
+						require('../assets/images/CS-Project-Homepage-Mobile.png'),
+						require('../assets/images/CS-Project-Scenes-Mobile.png'),
+						require('../assets/images/CS-Project-Sessions-Mobile.png')
 					],
-					'content': `Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-											Deserunt minima quod nesciunt beatae nemo, cupiditate. 
-											Obcaecati magnam possimus natus iste in autem itaque! 
-											Natus mollitia eveniet totam odit dolorum odio iste nulla saepe praesentium excepturi quis iure esse ipsam, sint maiores a id quam perferendis ipsum amet. 
-											Numquam odit deserunt esse quibusdam sapiente optio sunt facilis, delectus enim itaque quis non sit qui, eveniet incidunt vel in quasi rerum nulla, perferendis ducimus fuga! 
-											Aspernatur consequuntur corporis recusandae adipisci, vero tenetur rem, quidem in tempore, possimus natus perspiciatis. 
-											Harum ipsam distinctio, eos, aliquid maiores neque natus, illo adipisci, quos laboriosam recusandae.`,
+					'content': `CadyStudios is a family-owned school photography business that specializes in magazine-quality photos for students of all backgrounds and interests.`,
 				}
 			],
 			all: function() {return this.projects},	
@@ -151,7 +151,7 @@ class ProjectsSection extends Component {
 				tech={project.tech}
 				projectUrl={project.projectUrl}
 				key={index}
-			/></div>)
+		/></div>).reverse()
 
 		return (
 			<div className="projectsCanvas">

@@ -80,6 +80,7 @@ button.btn.btn-primary:hover {
   border: 2px solid $primaryColor;
 }
 
+
 //Logo
 .logoMain {
   min-width: 80px;
@@ -121,7 +122,6 @@ button.btn.btn-primary:hover {
 
 .hero-container {
   width: 100%;
-  left: 22%;
 }
 
 // .projectCanvas canvas {
@@ -333,7 +333,6 @@ button.btn.btn-primary:hover {
 .projectHero {
   width: 100%;
   color: $carbon;
-  position: absolute;
 }
 
 .projectMain {
@@ -398,6 +397,11 @@ button.btn.btn-primary:hover {
 
 .projectImageLarge {
   margin-top: 2rem;
+}
+.navigationButtons {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 2rem 0 2rem;
 }
 
 /* CV */
@@ -464,14 +468,51 @@ button.btn.btn-primary:hover {
 }
 .container.contactCanvas .contact-form input, .container.contactCanvas .contact-form textarea {
   margin: 1.5rem 0;
-  padding: 0.5rem;
 }
 .container.contactCanvas form {
   max-width: 400px;
   width: 100%;
   margin: 0 auto;
 }
-
+.container.contactCanvas form .form-label-group {
+  position: relative;
+}
+.container.contactCanvas .form-label-group > label, .container.contactCanvas .form-label-group > input {
+  height: 3.5rem;
+  padding: .75rem;
+}
+.container.contactCanvas .form-label-group input:not(:placeholder-shown), .form-label-group textarea:not(:placeholder-shown) {
+  padding-top: 1.5rem;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+.container.contactCanvas .form-label-group input:not(:placeholder-shown) ~ label, .container.contactCanvas .form-label-group textarea:not(:placeholder-shown) ~ label {
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  font-size: 12px;
+  color: $carbon;
+  opacity: 1;
+}
+.container.contactCanvas .form-label-group > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+  line-height: 1.5;
+  color: #495057;
+  pointer-events: none;
+  cursor: text;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  transition: all .09s ease-in-out;
+  opacity: 0;
+}
+.container.contactCanvas label {
+  display: inline-block;
+  margin-bottom: .5rem;
+}
 
 .loader {
   position: absolute;
@@ -496,5 +537,31 @@ button.btn.btn-primary:hover {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+.mobileMenu {
+  display: none;
+}
+
+
+
+.AppContainer {
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  padding-bottom: 80px;
+}
+
+@media only screen and (max-width: 480px) {
+  .mobileMenu {
+    display: flex;
+    position: absolute;
+    background-color: $snow-white;
+    width: 100%;
+    bottom: 0;
+    height: 80px;
   }
 }

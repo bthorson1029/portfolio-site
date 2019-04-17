@@ -1,0 +1,79 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Cady Studios",
+      "date": "January 2018",
+      "type": "UI/UX Design | Front End Development",
+      "projectUrl": "https: //store.cadystudios.com/",
+      "imageUrl": "../assets/images/projectOneImage.png",
+      "projectImage": "../assets/images/CS-Project-4.png",
+      "brief": "For Cady Studios, I was tasked to build a responsive and intuitive photo ordering and appointment scheduling platform built on the Kentico CMS. The Kentico CMS backend was required to allow marketing and manangment positions to make adjustments to the website quickly and easily.",
+      "tech": "HTML, CSS, JS, Bootstrap, Kentico, Sketch, InVision, Adobe Illustrator",
+      "slides": [
+        "../assets/images/CS-Project-Homepage.png",
+        "../assets/images/CS-Project-Scenes.png",
+        "../assets/images/CS-Project-Sessions.png",
+        "../assets/images/CS-Project-Homepage-Mobile.png",
+        "../assets/images/CS-Project-Scenes-Mobile.png",
+        "../assets/images/CS-Project-Sessions-Mobile.png"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "SWP Connect",
+      "date": "March 2018",
+      "type": "UI/UX Design",
+      "projectUrl": "https: //swpconnect.com/",
+      "imageUrl": "../assets/images/projectTwoImage.png",
+      "projectImage": "../assets/images/SWP-Project-1.png",
+      "brief": "For SWP Connect, I worked with the Vice President to design an approachable and informative landing page for their new educational series for those wanting to plan for retirement.",
+      "tech": "Sketch, InVision, Adobe Photoshop",
+      "slides": [
+        "../assets/images/SWP-Project-1.png"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Carzilla",
+      "date": "November 2017",
+      "type": "UI/UX Design",
+      "projectUrl": "http: //carzillaapp.com/",
+      "imageUrl": "../assets/images/projectThreeImage.png",
+      "projectImage": "../assets/images/CZ-Project-1.png",
+      "brief": "Carzilla is a mobile app that aims to disrupt the car buying industry. I helped the Carzilla team design marketing materials including a newsletter that was sent out dealerships around the United States.",
+      "tech": "Sketch, InVision, Adobe Photoshop, Adobe Illustrator",
+      "slides": [
+        "../assets/images/CZ-Project-1.png"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Stone Mountain Park",
+      "date": "September 2017",
+      "type": "UI/UX Design",
+      "projectUrl": "https: //www.stonemountainpark.com/",
+      "imageUrl": "../assets/images/projectFourImage.png",
+      "projectImage": "../assets/images/StoneMountain-iPhone.png",
+      "brief": "Stone Mountain Park, located in Atlanta, has a myriad of events and activities for those visiting the park. My job was to design a mobile app that would help new and veteran visitors figure out which activities would suit them the best.",
+      "tech": "Sketch, InVision, Adobe Illustrator",
+      "slides": [
+        "../assets/images/StoneMountain-iPhone.png"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Adelman Travel Group",
+      "date": "August 2017",
+      "type": "UI/UX Design",
+      "projectUrl": "https: //www.adelmantravel.com/",
+      "imageUrl": "../assets/images/Adelman-ProjectPhoto.png",
+      "projectImage": "../assets/images/StoneMountain-iPhone.png",
+      "brief": "Adelman Travel Group is one of the largest private travel management companies in North America. I assisted the Adelman team by designing a new modern and responsive website.",
+      "tech": "Sketch, InVision, Adobe Illustrator, Adobe Photoshop",
+      "slides": [
+        "../assets/images/Adelman-Homepage.png"
+      ]
+    }
+  ]
+}

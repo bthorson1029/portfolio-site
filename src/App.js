@@ -13,7 +13,6 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhoneSquare } from '@fortawesome/free-solid-svg-icons';
 import { faDribbbleSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import Modal from './components/Modal.js';
 
 library.add(fab, faEnvelope, faPhoneSquare, faDribbbleSquare, faLinkedin)
 
@@ -31,9 +30,9 @@ class App extends Component {
 	
 	render() {
     return (
+			<div className="AppContainer">
       <Router>
 	      <div className="App">
-					<Modal />
 	        <Route path="/" component={Header} />
 	        <Route exact path="/" component={Hero} />
 	        <Switch>
@@ -44,6 +43,7 @@ class App extends Component {
 	        </Switch>
 	      </div>
       </Router>
+			</div>
     );
   }
 }

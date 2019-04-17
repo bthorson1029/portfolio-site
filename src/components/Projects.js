@@ -8,8 +8,9 @@ import SliderComponent from './SliderComponent.js';
 
 
 
+
 function Projects(props) {
-	
+	const totalProjects = data.projects.length;
 	const project = data.get(
     parseInt(props.match.params.projectId, 10)
   )
@@ -23,8 +24,13 @@ function Projects(props) {
 				<div className="container">
 					<div className="projectHeading">
 						<h1>{project.name}</h1>
-						<div className="backToProjects">
-							<Link to={`/Projects/`}><button className="btn btn-secondary projectButton">Back to Projects</button></Link>
+						<div className="navigationButtons">
+							<div className="backToProjects">
+								<Link to={`/Projects/`}><button className="btn btn-secondary projectButton">Back to Projects</button></Link>
+							</div>
+							<div className="nextProject">
+								<Link to={`/Projects/${project.id + 1 <= totalProjects ? project.id + 1 : project.id - (totalProjects) + 1}`}><button className="btn btn-secondary projectButton">Next Project</button></Link>
+							</div>
 						</div>
 					</div>
 						<div className="projectMain">

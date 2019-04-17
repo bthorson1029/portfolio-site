@@ -63,14 +63,18 @@ class Contact extends Component {
         </div>
         <form name="contact-form" className="contact-form form-group" method="post" onSubmit={this.handleSubmit}>
           <input type="hidden" name="contact-form" value="contact" />
+          <div className="form-label-group">
           <input 
             onChange={this.handleChange}
             name="name" 
             className="form-control message-name" 
             type="text" 
-            placeholder="Your Name" 
+            placeholder="What's Your Name?" 
             value={name} />
+          <label for="name">What's Your Name?</label>
+          </div>
 
+          <div className="form-label-group">
           <input 
             onChange={this.handleChange} 
             name="email" 
@@ -79,7 +83,10 @@ class Contact extends Component {
             placeholder="your@email.com" 
             required 
             value={email} />
+            <label for="email">What's Your Email?</label>
+          </div>
 
+          <div className="form-label-group">
           <textarea 
             onChange={this.handleChange}
             name="message" 
@@ -88,6 +95,8 @@ class Contact extends Component {
             placeholder="Please write your message here" 
             value={message} 
             required />
+            <label for="message">Your Message</label>
+          </div>
 
           <div data-netlify-recaptcha="true"></div>
 
