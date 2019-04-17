@@ -281,7 +281,7 @@ button.btn.btn-primary:hover {
   text-align: center; }
 
 .projectsArea {
-  margin: 7rem 0; }
+  margin: 4rem 0; }
 
 .viewProject {
   color: #ff0030; }
@@ -332,16 +332,28 @@ button.btn.btn-primary:hover {
 .projectMain {
   width: 100%;
   margin: 0 auto;
-  margin-top: 8rem;
+  margin-top: 4rem;
   margin-bottom: 4rem; }
 
-.projectHeading > h1 {
+.projectHeading h1 {
   font-size: 5rem;
   text-transform: uppercase;
   font-weight: 800;
   margin-top: 7.5rem;
   color: #353838;
   text-align: center; }
+
+@media only screen and (max-width: 480px) {
+  .projectHeading h1 {
+    font-size: 2.5rem; }
+  .logoMain {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  nav > .container {
+    justify-content: center !important; }
+  .projectInfoBox {
+    padding-top: 2rem; } }
 
 .projectInfoBox {
   width: 100%;
@@ -375,9 +387,12 @@ button.btn.btn-primary:hover {
   margin-top: 2rem; }
 
 .navigationButtons {
+  display: block; }
+
+.nextPrev {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 2rem 0 2rem; }
+  padding: 0rem 1rem 2rem 1rem; }
 
 /* CV */
 .container.cvContainer {
@@ -442,6 +457,9 @@ button.btn.btn-primary:hover {
 
 .container.contactCanvas .contact-form input, .container.contactCanvas .contact-form textarea {
   margin: 1.5rem 0; }
+
+.container.contactCanvas .contact-form textarea {
+  height: 148px; }
 
 .container.contactCanvas form {
   max-width: 400px;
@@ -510,14 +528,6 @@ button.btn.btn-primary:hover {
 
 .mobileMenu {
   display: none; }
-
-.AppContainer {
-  min-height: 100vh;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  display: block;
-  padding-bottom: 80px; }
 
 @media only screen and (max-width: 480px) {
   .mobileMenu {

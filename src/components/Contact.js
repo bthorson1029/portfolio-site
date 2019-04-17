@@ -26,13 +26,13 @@ class Contact extends Component {
       .catch(error => alert(error));
     
     e.preventDefault();
-    this.setState({ buttonText: '...sending'});
+    this.setState({ buttonText: "...sending"});
   };
 
   formSent = () => {
     setTimeout(function () {
       this.setState({
-        buttonText: 'Message Sent! Thank You!',
+        buttonText: "Message Sent! Thank You!",
         sent: true
       })
       this.resetForm();
@@ -42,10 +42,10 @@ class Contact extends Component {
   resetForm = () => {
     setTimeout(function () {
       this.setState({
-        name: '',
-        message: '',
-        email: '',
-        buttonText: 'Send Message'
+        name: "",
+        message: "",
+        email: "",
+        buttonText: "Send Message"
       })
     }.bind(this), 2000)
 
@@ -69,9 +69,9 @@ class Contact extends Component {
             name="name" 
             className="form-control message-name" 
             type="text" 
-            placeholder="What's Your Name?" 
+            placeholder="Name" 
             value={name} />
-          <label for="name">What's Your Name?</label>
+          <label for="name">Name</label>
           </div>
 
           <div className="form-label-group">
@@ -80,10 +80,10 @@ class Contact extends Component {
             name="email" 
             className="form-control message-email" 
             type="email" 
-            placeholder="your@email.com" 
+            placeholder="Email" 
             required 
             value={email} />
-            <label for="email">What's Your Email?</label>
+            <label for="email">Email</label>
           </div>
 
           <div className="form-label-group">
@@ -95,7 +95,7 @@ class Contact extends Component {
             placeholder="Please write your message here" 
             value={message} 
             required />
-            <label for="message">Your Message</label>
+            <label for="message">Message</label>
           </div>
 
           <div data-netlify-recaptcha="true"></div>

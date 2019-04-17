@@ -24,12 +24,10 @@ function Projects(props) {
 				<div className="container">
 					<div className="projectHeading">
 						<h1>{project.name}</h1>
+
 						<div className="navigationButtons">
 							<div className="backToProjects">
 								<Link to={`/Projects/`}><button className="btn btn-secondary projectButton">Back to Projects</button></Link>
-							</div>
-							<div className="nextProject">
-								<Link to={`/Projects/${project.id + 1 <= totalProjects ? project.id + 1 : project.id - (totalProjects) + 1}`}><button className="btn btn-secondary projectButton">Next Project</button></Link>
 							</div>
 						</div>
 					</div>
@@ -40,7 +38,18 @@ function Projects(props) {
 												<h2>Project Summary</h2>
 												<p>{project.content}</p>
 										</div>*/}
+								<div className="col-lg-7 p-0">
+									<SliderComponent {...project} />
+								</div>
 								<div className="projectInfoBox col-lg-5">
+									<div className="nextPrev">
+										<div className="prevProject">
+											<Link to={`/Projects/${project.id - 1 > 0 ? project.id - 1 : (project.id - 1) + totalProjects}`}><button className="btn btn-secondary projectButton">Prev Project</button></Link>
+										</div>
+										<div className="nextProject">
+											<Link to={`/Projects/${project.id + 1 <= totalProjects ? project.id + 1 : project.id - (totalProjects) + 1}`}><button className="btn btn-secondary projectButton">Next Project</button></Link>
+										</div>
+									</div>
 									<div className="projectInfoLeft col-lg-12">
 										<div className="projectRole">
 											<h5>Role</h5>
@@ -63,9 +72,6 @@ function Projects(props) {
 										</div>
 									</div>
 								</div>	
-									<div className="col-lg-7 p-0">
-										<SliderComponent {...project} />
-									</div>
 								</div>
 							</div>
 						{/* <hr /> */}

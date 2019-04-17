@@ -30,7 +30,6 @@ class App extends Component {
 	
 	render() {
     return (
-			<div className="AppContainer">
       <Router>
 	      <div className="App">
 	        <Route path="/" component={Header} />
@@ -43,7 +42,6 @@ class App extends Component {
 	        </Switch>
 	      </div>
       </Router>
-			</div>
     );
   }
 }
