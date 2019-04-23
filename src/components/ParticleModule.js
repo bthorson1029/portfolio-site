@@ -12,7 +12,7 @@ class ParticleModule extends Component {
 								      value: 80,
 								      density: {
 								        enable: true,
-								        value_area: 4000
+								        value_area: 8000
 								      }
 								    },
 								    color: {
