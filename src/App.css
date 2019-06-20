@@ -1,5 +1,5 @@
-/* Grid Styles */
 @import url("https://use.typekit.net/mbq5gkf.css");
+/* Grid Styles */
 @import url(../node_modules/slick-carousel/slick/slick.css);
 @import url(../node_modules/slick-carousel/slick/slick-theme.css);
 .grid {
@@ -200,6 +200,43 @@ button.btn.btn-primary:hover {
   margin-top: 16rem;
   max-width: 960px; }
 
+.hero-buttons {
+  display: flex; }
+  .hero-buttons a {
+    margin-right: 1rem; }
+
+button.btn-primary.heroButton {
+  margin-top: 1rem;
+  width: 100%;
+  background-color: #ff0030 !important;
+  border-color: #ff0030 !important;
+  border-width: 2px !important;
+  margin-right: 1rem; }
+
+button.btn-primary.heroButton:hover {
+  background-color: transparent !important;
+  border-color: #ff0030;
+  border-width: 2px !important;
+  color: #ff0030 !important; }
+
+button.btn-secondary.heroButton {
+  margin-top: 1rem;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  color: #ff0030;
+  border-color: #ff0030 !important;
+  border-width: 2px !important;
+  margin-right: 1rem; }
+
+button.btn-secondary.heroButton:hover {
+  margin-top: 1rem;
+  width: 100%;
+  background-color: #ff0030 !important;
+  color: #ffffff;
+  border-color: #ff0030 !important;
+  border-width: 2px !important;
+  margin-right: 1rem; }
+
 @media only screen and (max-width: 480px) {
   .hero-text {
     font-size: 3rem; }
@@ -217,6 +254,7 @@ button.btn.btn-primary:hover {
   .logoMain {
     margin-top: -0.5rem; } }
 
+<<<<<<< HEAD
 .heroButton {
   margin-top: 1rem;
   width: 30%;
@@ -230,6 +268,8 @@ button.btn.btn-primary:hover {
   border-width: 2px !important;
   color: #ff0030 !important; }
 
+=======
+>>>>>>> f92ee8da7f454c4a034185c49160b45ddd0a4c11
 .projectButton {
   background-color: #ff0030 !important;
   border-color: #ff0030 !important;

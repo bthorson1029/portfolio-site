@@ -24,7 +24,9 @@ export default function Project(props){
 				<div className="projectDetails">
 					<div className="projectType"><p>{props.type}</p></div>
 					<div className="projectTitle"><h3>{props.name}</h3></div>
-					<a href={`/Projects/${projectId}`} style={{color: '#dd425c'}}>View Project</a>
+					<Link to={`/Projects/${projectId}`}>
+						<a href="#" style={{color: '#dd425c'}}>View Project</a>
+					</Link>
 				</div>
 			</div>
 		</div>
