@@ -1,5 +1,5 @@
-@import '_custom.scss';
 @import url("https://use.typekit.net/mbq5gkf.css");
+@import '_custom.scss';
 @import "../node_modules/slick-carousel/slick/slick.css"; 
 @import "../node_modules/slick-carousel/slick/slick-theme.css";
 
@@ -161,6 +161,59 @@ button.btn.btn-primary:hover {
   margin-top: 16rem;
   max-width: 960px;
 }
+
+.hero-buttons {
+  display: flex;
+  & a {
+    margin-right: 1rem;
+  }
+}
+
+button.btn-primary {
+  &.heroButton {
+  margin-top: 1rem;
+  width: 100%;
+  background-color: $primaryColor !important;
+  border-color: $primaryColor !important;
+  border-width: 2px !important;
+  margin-right: 1rem;
+  }
+}
+
+button.btn-primary {
+  &.heroButton:hover {
+  background-color: rgba(0,0,0,0) !important;
+  border-color: $primaryColor;
+  border-width: 2px !important;
+  color: $primaryColor !important;
+  }
+}
+
+button.btn-secondary {
+  &.heroButton {
+  margin-top: 1rem;
+  width: 100%;
+  background-color: rgba(255,255,255,0);
+  color: $primaryColor;
+  border-color: $primaryColor !important;
+  border-width: 2px !important;
+  margin-right: 1rem;
+  }
+}
+
+button.btn-secondary {
+  &.heroButton:hover {
+  margin-top: 1rem;
+  width: 100%;
+  background-color: $primaryColor !important;
+  color: $pure_white;
+  border-color: $primaryColor !important;
+  border-width: 2px !important;
+  margin-right: 1rem;
+  }
+}
+
+
 @media only screen and (max-width: 480px) {
   .hero-text {
     font-size: 3rem;
@@ -183,20 +236,6 @@ button.btn.btn-primary:hover {
   .logoMain {
     margin-top: -0.5rem;
   }
-}
-.heroButton {
-  margin-top: 1rem;
-  width: 30%;
-  background-color: $primaryColor !important;
-  border-color: $primaryColor !important;
-  border-width: 2px !important;
-}
-
-.heroButton:hover {
-  background-color: rgba(0,0,0,0) !important;
-  border-color: $primaryColor;
-  border-width: 2px !important;
-  color: $primaryColor !important;
 }
 
 .projectButton {
