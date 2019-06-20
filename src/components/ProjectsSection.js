@@ -8,7 +8,7 @@ const data = {
 			projects: [ 
 				{
 					'id': 1,
-					'name': 'Adelman Travel Group',
+					'name': 'Adelman Travel',
 					'date': 'August 2017',
 					'type': 'UI/UX Design',
 					'projectUrl': 'https://www.adelmantravel.com/',
@@ -70,7 +70,7 @@ const data = {
 				},
 				{
 					'id': 4,
-					'name': 'Stone Mountain Park',
+					'name': 'Stone Mountain',
 					'date': 'September 2017',
 					'type': 'UI/UX Design',
 					'projectUrl': 'https://www.stonemountainpark.com/',

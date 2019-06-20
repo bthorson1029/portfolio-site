@@ -7,12 +7,20 @@ $primaryColor: #ff0030;
 $pure_white: #ffffff;
 $snow-white: #efefef;
 $carbon: #353838;
-$Typeface: 'Proxima Nova', sans-serif;
+$Typeface: 'proxima-nova', sans-serif;
 
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
+::selection {
+  background: $primaryColor;
+  color: $pure_white;  /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: $primaryColor;
+  color: $pure_white;  /* Gecko Browsers */
+}
 body {
   font-family: $Typeface !important;
   margin: 0;
@@ -33,10 +41,10 @@ h5 {
 }
 
 p {
-  font-size: 1rem !important;
-  line-height: 1.5rem !important;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-family: $Typeface;
-  color: $carbon !important;
+  color: $carbon;
 
 }
 
@@ -139,7 +147,7 @@ button.btn.btn-primary:hover {
   font-size: 5rem;
   color: $carbon;
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 900;
   letter-spacing: 3px;
   // position: relative;
 }
@@ -243,6 +251,11 @@ button.btn.btn-primary:hover {
   margin-top: -0.5rem;
 }
 
+.projectType p {
+  font-size: 0.8rem !important;
+  font-weight: 700;
+}
+
 .projectTitle > h3 {
   font-weight: 800 !important;
   color: $carbon;
@@ -262,7 +275,7 @@ button.btn.btn-primary:hover {
 .projects-title h1 {
   
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 900;
   font-size: 5rem;
   margin-top: 7.5rem;
   color: $carbon;
@@ -345,7 +358,7 @@ button.btn.btn-primary:hover {
 .projectHeading h1 {
   font-size: 5rem;
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 900;
   margin-top: 7.5rem;
   color: $carbon;
   text-align: center;
@@ -395,7 +408,7 @@ button.btn.btn-primary:hover {
 .projectContentArea > h2 {
   text-transform: uppercase;
   font-family: $Typeface;
-  font-weight: 800;
+  font-weight: 900;
 }
 
 .projectContentArea_B {
@@ -407,7 +420,7 @@ button.btn.btn-primary:hover {
 .projectContentArea_B > h2 {
   text-transform: uppercase;
   font-family: $Typeface;
-  font-weight: 800;
+  font-weight: 900;
   margin-top: 2rem;
 }
 
