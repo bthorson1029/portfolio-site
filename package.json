@@ -10,7 +10,7 @@
     "i": "^0.3.6",
     "jquery": "^3.3.1",
     "node-sass-chokidar": "0.0.3",
-    "npm": "^6.9.0",
+    "npm": "^6.13.4",
     "npm-run-all": "^4.1.2",
     "path-to-regexp": "^2.2.1",
     "popper.js": "^1.14.7",
