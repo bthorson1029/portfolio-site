@@ -30,7 +30,7 @@ class Hero extends Component {
 					<div className="hero-content">
 						<h1 className="hero-text">{heroText}</h1>
 						<h4 className="hero-subtext">{heroSubText}</h4>
-	<h4 className="hero-subtext">I am currently a software designer/developer consultant at <a href="https://www.improving.com/" style={{ textDecoration: 'none', color: '#ff0030' }} target="_blank" rel="noopener noreferrer">Improving</a> in Atlanta, GA.</h4>
+	<h4 className="hero-subtext">I am senior ux designer at <a href="https://www.assurant.com/" style={{ textDecoration: 'none', color: '#ff0030' }} target="_blank" rel="noopener noreferrer">Assurant</a> in Atlanta, GA.</h4>
 						<div className="hero-buttons">
 							<Link to={projectLink.pathname}>
 								<button className="btn btn-primary heroButton">{projectLink.title}</button>
